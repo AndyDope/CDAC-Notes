@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "e579f61f8249a677",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ca7e21386c77723",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "25370f8bf22d531f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "C++ Session 4 - Conditional and Looping Statements.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "C++ Session 4 - Conditional and Looping Statements"
+            }
+          }
+        ],
+        "stacked": true
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6d96f77e93c3017b",
+    "type": "split",
+    "children": [
+      {
+        "id": "61d2c07270ff7f2f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4e7a4e9338ae65aa",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "676971bad6da4559",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "865a9321f92050ae",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "ad54df9f006d2734",
+    "type": "split",
+    "children": [
+      {
+        "id": "81389d4a1ce615bb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3654e13db548be40",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "C++ Session 4 - Conditional and Looping Statements.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for C++ Session 4 - Conditional and Looping Statements"
+            }
+          },
+          {
+            "id": "c186cfe361cac3c0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "C++ Session 4 - Conditional and Looping Statements.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from C++ Session 4 - Conditional and Looping Statements"
+            }
+          },
+          {
+            "id": "d049fad5de5a80d9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "18bdf72e57b60b57",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "C++ Session 4 - Conditional and Looping Statements.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of C++ Session 4 - Conditional and Looping Statements"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "25370f8bf22d531f",
+  "lastOpenFiles": [
+    "C++ Sessions 2 & 3 - Beginning with C++.md",
+    "C++ Session 4 - Conditional and Looping Statements.md",
+    "C++ Overview.md",
+    "C++ Sessions 17 & 18 - STL and RTTI.md",
+    "C++ MCQs.md",
+    "C++ Sessions 6 & 7 - Memory Management and Pointers.md",
+    "C++ Session 16 - Templates.md",
+    "C++ Session 15 - File Handling in C++.md",
+    "C++ Session 14 - Managing Console IO Operations.md",
+    "C++ Session 13 - Exception Handling.md",
+    "C++ Session 12 - Virtual Functions and Abstract Class.md",
+    "C++ Session 11 - Polymorphism.md",
+    "C++ Session 10 - Inheritance - Extending Class.md",
+    "C++ Session 9 - Constructors and Destructor.md",
+    "C++ Session 8 - OOP Concepts.md",
+    "C++ Session 5 - Functions in C++.md",
+    "C++ Session 1 - Getting Started.md",
+    "C++ Session 10 - Inheritance.md",
+    "C++ Sessions 10.md",
+    "Session 8.md",
+    "Session 8 - OOP Concepts.md",
+    "Welcome.md",
+    "C++ Session 1.md"
+  ]
+}
