@@ -1,0 +1,11 @@
+{
+  "inline-spoilers:create-spoiler": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "H"
+    }
+  ]
+}
