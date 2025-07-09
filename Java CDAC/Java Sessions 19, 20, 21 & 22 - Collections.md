@@ -136,6 +136,8 @@ A `Queue` is a collection designed for holding elements prior to processing. It 
 
 #### **6. `Comparable` and `Comparator` Interfaces**
 
+^0639fb
+
 These interfaces define how objects are ordered and are crucial for sorting collections and for data structures like `TreeSet` and `TreeMap`.
 
 *   **`Comparable<T>` Interface:**

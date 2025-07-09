@@ -213,4 +213,9 @@ Reflection is a very powerful tool, but it is slow and breaks encapsulation. It 
 *   **Annotations:** The Reflection API is often used to process **Annotations**. Annotations (like `@Override` or `@Test`) are a form of metadata you add to your code. Frameworks like JUnit use reflection to find all methods annotated with `@Test` and then execute them.
 *   **Final Thoughts on your Java Journey:** Congratulations on completing the Core Java syllabus! You've covered a vast range of topics from basic syntax to advanced concepts like concurrency and reflection. The next step in becoming a proficient Java developer is to apply these concepts, especially the Collections Framework, Streams, and Exception Handling, to build real applications. The `java.util.concurrent` package and frameworks like Spring are logical next steps in your learning path.
 
-This concludes the Java module.
+#### 🎊This concludes the topics in our syllabus for Core Java.
+
+---
+
+- Go through a complete overview of the complete syllabus in one go **🔗[[Core Java Overview]]**.
+- Or try some **#MCQs** based on the complete syllabus and test your knowledge **🔗[[Java MCQs|Core Java MCQs]]**.

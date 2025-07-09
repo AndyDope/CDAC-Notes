@@ -37,7 +37,7 @@ int main() {
 
 To enable run-time polymorphism (or dynamic binding), we use the `virtual` keyword in the base class.
 
-A **virtual function** is a member function that you expect to be redefined (overridden) in derived classes. When you declare a function as `virtual` in the base class, you are telling the compiler: "Don't decide which version of this function to call at compile time. Wait until run time and check the type of the actual object."
+A **virtual function** is a member function that you expect to be redefined (overridden) in derived classes. When you declare a function as `virtual` in the base class, you are telling the compiler: "Don't decide which version of this function to call at compile time. Wait until run time and check the type of the actual object." ^f129e5
 
 **Example with `virtual`:**
 
@@ -84,7 +84,7 @@ A **pure virtual function** is a virtual function that has no implementation in 
 
 An **abstract class** is a class that has at least one pure virtual function.
 *   You **cannot** create an object of an abstract class.
-*   It is designed to be a contract for its derived classes. Any class that inherits from it *must* implement all of its pure virtual functions, or it too becomes an abstract class.
+*   It is designed to be a contract for its derived classes. Any class that inherits from it *must* implement all of its pure virtual functions, or it too becomes an abstract class. ^3a6ff5
 
 **Example:**
 ```cpp
@@ -143,11 +143,11 @@ C++ provides more specific and safer casting operators than the old C-style cast
 
 ### **Topic Summary & Revision**
 
-*   **Run-time Polymorphism:** Enabled by `virtual` functions, it allows the program to decide which overridden function to call at run time based on the object's actual type.
+*   **Run-time Polymorphism:** Enabled by `virtual` functions, it allows the program to decide which overridden function to call at run time based on the object's actual type. ^d52bb2
 *   **Virtual Function:** A function in a base class declared with `virtual`, intended to be overridden by derived classes.
 *   **Virtual Destructor:** Crucial for preventing memory leaks when deleting a derived object via a base class pointer.
 *   **Pure Virtual Function (`= 0`):** A virtual function with no implementation in the base class.
-*   **Abstract Class:** A class with at least one pure virtual function. It cannot be instantiated and serves as a contract for derived classes.
+*   **Abstract Class:** A class with at least one pure virtual function. It cannot be instantiated and serves as a contract for derived classes. ^b582b0
 
 ---
 

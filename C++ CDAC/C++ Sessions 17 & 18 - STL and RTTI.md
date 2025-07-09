@@ -251,4 +251,4 @@ int main() {
 ---
 
 - Go through a complete overview of the complete syllabus in one go **🔗[[C++ Overview]]**.
-- Or try some **#MCQs** based on the complete syllabus and test your knowledge **🔗[[C++ Sessions 17 & 18 - STL and RTTI|C++ MCQs]]**.
+- Or try some **#MCQs** based on the complete syllabus and test your knowledge **🔗[[C++ MCQs|C++ MCQs]]**.

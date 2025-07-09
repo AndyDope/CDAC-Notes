@@ -13,11 +13,11 @@ This page provides a high-level summary of the essential concepts covered in the
 ---
 
 #### [[C++ Sessions 2 & 3 - Beginning with C++|Sessions 2 & 3: Beginning with C++]]
-*   [[C++ Sessions 2 & 3 - Beginning with C++#1. C++Program structure|Program Structure]]: A C++ program typically consists of preprocessor directives (`#include`), a `main` function, and statements ending with semicolons.
-*   [[C++ Sessions 2 & 3 - Beginning with C++#2. C++ Tokens|Tokens]]: The smallest individual units in a program, such as keywords, identifiers, constants, and operators.
-*   [[C++ Sessions 2 & 3 - Beginning with C++#5. Operators|Operators]]: Symbols that perform operations on variables and values (e.g., `+`, `-`, `*`, `/`, `%`, `==`, `&&`).
-*   [[C++ Sessions 2 & 3 - Beginning with C++#4. Constant and Static Members|Static Members]]: Class members that belong to the class itself, not to individual objects (shared by all objects).
-*   [[C++ Sessions 2 & 3 - Beginning with C++#4. Constant and Static Members|Constant Members]]: Class members whose values cannot be modified after initialization.
+*   **[[C++ Sessions 2 & 3 - Beginning with C++#1. C++Program structure|Program Structure]]**: A C++ program typically consists of preprocessor directives (`#include`), a `main` function, and statements ending with semicolons.
+*   **[[C++ Sessions 2 & 3 - Beginning with C++#2. C++ Tokens|Tokens]]**: The smallest individual units in a program, such as keywords, identifiers, constants, and operators.
+*   **[[C++ Sessions 2 & 3 - Beginning with C++#5. Operators|Operators]]**: Symbols that perform operations on variables and values (e.g., `+`, `-`, `*`, `/`, `%`, `==`, `&&`).
+*   **[[C++ Sessions 2 & 3 - Beginning with C++#4. Constant and Static Members|Static Members]]**: Class members that belong to the class itself, not to individual objects (shared by all objects).
+*   **[[C++ Sessions 2 & 3 - Beginning with C++#4. Constant and Static Members|Constant Members]]**: Class members whose values cannot be modified after initialization.
 
 ---
 
@@ -77,10 +77,10 @@ This page provides a high-level summary of the essential concepts covered in the
 ---
 
 #### [[C++ Session 12 - Virtual Functions and Abstract Class|Session 12: Virtual Functions and Abstract Class]]
-*   [[C++ Session 12 - Virtual Functions and Abstract Class#1. Run Time Polymorphism|**Run-Time Polymorphism**]]: The ability of a program to decide which function to call at runtime, achieved using virtual functions.
-*   [[C++ Session 12 - Virtual Functions and Abstract Class#2. Virtual Functions and Pure virtual functions|**`virtual` Function**]]: A member function in a base class that you expect to be redefined in derived classes.
-*   [[C++ Session 12 - Virtual Functions and Abstract Class#2. Virtual Functions and Pure virtual functions|**Pure Virtual Function**]]: A virtual function with no definition (`= 0;`), which must be implemented by derived classes.
-*   [[C++ Session 12 - Virtual Functions and Abstract Class#5. Abstract class|**Abstract Class**]]: A class that has at least one pure virtual function and cannot be instantiated.
+*   [[C++ Session 12 - Virtual Functions and Abstract Class#^d52bb2|Run-Time Polymorphism]]: The ability of a program to decide which function to call at runtime, achieved using virtual functions.
+*   [[C++ Session 12 - Virtual Functions and Abstract Class#^f129e5|virtual Function]]: A member function in a base class that you expect to be redefined in derived classes.
+*   [[C++ Session 12 - Virtual Functions and Abstract Class#**3. Pure Virtual Functions and Abstract Classes**|Pure Virtual Function]]: A virtual function with no definition (`= 0;`), which must be implemented by derived classes.
+*   [[C++ Session 12 - Virtual Functions and Abstract Class#^3a6ff5|Abstract Class]]: A class that has at least one pure virtual function and cannot be instantiated.
 
 ---
 
