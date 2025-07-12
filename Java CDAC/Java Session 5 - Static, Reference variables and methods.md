@@ -1,4 +1,4 @@
-### **Session 5: Static, Reference Variables and Methods**
+## **Session 5: Static, Reference Variables and Methods**
 
 Welcome to Session 5. In our last session, we discussed instance variables, which belong to each individual object. Now, we'll introduce **static** members, which belong to the class itself and are shared by all objects. We will also formally introduce **reference types** and contrast them with the primitive types we've already seen.
 

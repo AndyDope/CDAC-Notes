@@ -1,1 +1,11 @@
-{}
+{
+  "cssTheme": "Encore",
+  "theme": "system",
+  "baseFontSizeAction": true,
+  "enabledCssSnippets": [
+    "headings",
+    "table"
+  ],
+  "baseFontSize": 18,
+  "accentColor": "#74ef6b"
+}

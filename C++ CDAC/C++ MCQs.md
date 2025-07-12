@@ -23,24 +23,24 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
    - [ ] 30, 6, 6
    - [ ] 25, 6, 6
    - [ ] 36, 6, 6
-   - [ ] The behavior is undefined due to order of evaluation.
+   - [x] The behavior is undefined due to order of evaluation.
 <br>
 2.  Consider the declarations: `const int *ptr;` and `int * const ptr;`. Which statement is true?
    - [ ] The first declares `ptr` as a constant pointer to an integer. The second declares `ptr` as a pointer to a constant integer.
    - [ ] Both declarations are syntactically incorrect.
-   - [ ] The first declares `ptr` as a pointer to a constant integer. The second declares `ptr` as a constant pointer to an integer.
+   - [x] The first declares `ptr` as a pointer to a constant integer. The second declares `ptr` as a constant pointer to an integer.
    - [ ] Both declare a constant pointer to a constant integer.
 <br>
 3.  What is the primary role of a `static` local variable inside a function?
    - [ ] It is accessible by other functions in the same file.
    - [ ] Its memory is allocated on the heap instead of the stack.
-   - [ ] It is initialized only once and retains its value across multiple function calls.
+   - [x] It is initialized only once and retains its value across multiple function calls.
    - [ ] It can only be used inside static member functions.
 <br>
 4.  Which of the following is true about a `const` member function?
 - [ ] It can only be called on `const` objects.
 - [ ] It can modify non-static data members of the class.
-- [ ] It cannot call any other non-const member functions of the class.
+- [x] It cannot call any other non-const member functions of the class.
 - [ ] It must return a `const` value.
 <br>
 5.  What is the output of the following code snippet, assuming a 64-bit system where pointers are 8 bytes?
@@ -55,25 +55,25 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
     }
     ```
 - [ ] 6, 0
-- [ ] 8, 1
+- [x] 8, 1
 - [ ] 6, 1
 - [ ] 8, 0
 <br>
 6.  If `int x = 10;`, `int y = 15;`, what is the value of the expression: `x > y ? x : y`?
 - [ ] 10
-- [ ] 15
+- [x] 15
 - [ ] 0
 - [ ] 1
 <br>
 7.  A static data member of a class is...
 - [ ] Initialized for each object of the class.
 - [ ] Initialized when the first object of its class is created.
-- [ ] Shared among all objects of its class.
+- [x] Shared among all objects of its class.
 - [ ] Accessible only through `const` member functions.
 <br>
 8.  In C++, a "token" refers to:
 - [ ] A special variable that stores security credentials.
-- [ ] The smallest individual unit of a program, like a keyword or an operator.
+- [x] The smallest individual unit of a program, like a keyword or an operator.
 - [ ] A function that returns an integer code.
 - [ ] The return type of the `main` function.
 
@@ -108,26 +108,26 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
     }
     ```
 - [ ] 10, 10
-- [ ] 20, 10
+- [x] 20, 10
 - [ ] 20, 20
 - [ ] 10, 20
 <br>
 2.  What does the `continue` statement do inside a loop?
 - [ ] Exits the loop immediately.
 - [ ] Deletes the current value of the loop iterator.
-- [ ] Skips the rest of the current iteration and proceeds to the next one.
+- [x] Skips the rest of the current iteration and proceeds to the next one.
 - [ ] Pauses the loop until a key is pressed.
 <br>
 3.  Under which circumstance will a C++ compiler most likely ignore a request to make a function `inline`?
 - [ ] The function is very short (one line).
-- [ ] The function contains a loop or is recursive.
+- [x] The function contains a loop or is recursive.
 - [ ] The function is declared in a header file.
 - [ ] The function returns `void`.
 <br>
 4.  If an array is declared as `int arr[5];`, what does `arr` represent in an expression like `cout << arr;`?
 - [ ] The value of the first element, `arr[0]`.
 - [ ] The size of the array in bytes.
-- [ ] The memory address of the first element of the array.
+- [x] The memory address of the first element of the array.
 - [ ] This will result in a compile-time error.
 <br>
 5.  What is the output of the following `switch` statement?
@@ -145,7 +145,7 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
     }
     ```
 - [ ] B
-- [ ] BC
+- [x] BC
 - [ ] BCD
 - [ ] D
 <br>
@@ -153,11 +153,11 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
 - [ ] `int func(int y);`
 - [ ] `void func(int &x);`
 - [ ] `void func(const int x);`
-- [ ] `void func(double x);`
+- [x] `void func(double x);`
 <br>
 7.  How are command-line arguments `(e.g., ./my_program arg1 arg2)` passed to the `main` function?
 - [ ] Through a `std::vector<string>`
-- [ ] Through `int argc` (argument count) and `char *argv[]` (argument vector)
+- [x] Through `int argc` (argument count) and `char *argv[]` (argument vector)
 - [ ] Through the standard input stream `cin`
 - [ ] They are stored in a global array named `ARGS`
 <br>
@@ -165,7 +165,7 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
 - [ ] You only need to specify the number of rows.
 - [ ] You only need to specify the number of columns.
 - [ ] You must specify both the number of rows and columns.
-- [ ] You must specify the number of columns, but the number of rows is optional.
+- [x] You must specify the number of columns, but the number of rows is optional.
 
 <br>
 
@@ -186,18 +186,18 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
 1.  If you allocate memory as `int *arr = new int[10];`, what is the correct way to deallocate it?
 - [ ] `delete arr;`
 - [ ] `delete arr[10];`
-- [ ] `delete [] arr;`
+- [x] `delete [] arr;`
 - [ ] The memory is deallocated automatically when `arr` goes out of scope.
 <br>
 2.  What is the primary difference between memory allocation using `new` in C++ and `malloc()` in C?
 - [ ] `new` can only allocate memory for objects, while `malloc()` can only allocate for primitive types.
 - [ ] `new` is a function, while `malloc()` is an operator.
-- [ ] `new` automatically calls the object's constructor, while `malloc()` does not.
+- [x] `new` automatically calls the object's constructor, while `malloc()` does not.
 - [ ] `new` allocates memory from the stack, while `malloc()` allocates from the heap.
 <br>
 3.  What is a "dangling pointer"?
 - [ ] A pointer that has not been initialized and points to a random memory location.
-- [ ] A pointer that points to a memory location that has already been deallocated (`deleted`).
+- [x] A pointer that points to a memory location that has already been deallocated (`deleted`).
 - [ ] A pointer with the value `NULL` or `nullptr`.
 - [ ] A `void*` pointer that has not been cast to a specific type.
 <br>

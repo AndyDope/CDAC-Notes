@@ -1,0 +1,258 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Insertion Sort</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        #array-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 250px;
+            margin: 20px auto;
+            border-bottom: 2px solid #333;
+            width: 90%;
+            max-width: 600px;
+        }
+        .bar {
+            width: 30px;
+            margin: 0 2px;
+            background-color: #3498db; /* Blue */
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+        .bar-label {
+            position: absolute;
+            bottom: -20px;
+            width: 100%;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+        .bar-key { background-color: #e74c3c; /* Red */ }
+        .bar-comparing { background-color: #f1c40f; /* Yellow */ }
+        .bar-sorted { background-color: #2ecc71; /* Green */ }
+        
+        #controls, #status-container {
+            margin-top: 25px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            transition: background-color 0.2s;
+        }
+        button:disabled {
+            background-color: #bdc3c7;
+            cursor: not-allowed;
+        }
+        button:hover:not(:disabled) {
+            background-color: #2980b9;
+        }
+        #status {
+            font-size: 18px;
+            font-family: monospace;
+            height: 25px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Interactive Insertion Sort</h2>
+    <p>Use the controls to step through the algorithm.</p>
+    
+    <div id="array-container"></div>
+    
+    <div id="status-container">
+        <p id="status">Click 'Randomize' to generate an array, then 'Sort' to begin.</p>
+    </div>
+
+    <div id="controls">
+        <button id="randomizeBtn">Randomize</button>
+        <button id="sortBtn">Sort</button>
+        <button id="pauseBtn" disabled>Pause</button>
+        <button id="resumeBtn" disabled>Resume</button>
+        <button id="stepBtn" disabled>Step Forward</button>
+    </div>
+
+    <script>
+        // --- DOM Elements ---
+        const container = document.getElementById('array-container');
+        const randomizeBtn = document.getElementById('randomizeBtn');
+        const sortBtn = document.getElementById('sortBtn');
+        const pauseBtn = document.getElementById('pauseBtn');
+        const resumeBtn = document.getElementById('resumeBtn');
+        const stepBtn = document.getElementById('stepBtn');
+        const statusEl = document.getElementById('status');
+        
+        // --- State ---
+        let array = [];
+        const ARRAY_SIZE = 10;
+        const ANIMATION_SPEED_MS = 500;
+        let isSorting = false;
+        let isPaused = false;
+        let stepPromise = null;
+
+        // --- Utility Functions ---
+        async function step() {
+            if (isPaused) {
+                // Create a promise that will be resolved by the 'resume' or 'step' button
+                await new Promise(resolve => {
+                    stepPromise = resolve;
+                });
+            } else {
+                // Normal auto-play delay
+                await new Promise(resolve => setTimeout(resolve, ANIMATION_SPEED_MS));
+            }
+        }
+
+        function updateStatus(text) { statusEl.innerText = text; }
+        
+        function setMainButtonsState(disabled) {
+            randomizeBtn.disabled = disabled;
+            sortBtn.disabled = disabled;
+        }
+        
+        function setControlButtonsState(isSortingNow, isPausedNow) {
+            pauseBtn.disabled = !isSortingNow || isPausedNow;
+            resumeBtn.disabled = !isSortingNow || !isPausedNow;
+            stepBtn.disabled = !isSortingNow || !isPausedNow;
+        }
+
+        // --- Array and Rendering Functions ---
+        function generateRandomArray() {
+            if (isSorting) return;
+            array = [];
+            for (let i = 0; i < ARRAY_SIZE; i++) {
+                array.push(Math.floor(Math.random() * 96) + 5);
+            }
+            renderArray(array);
+            updateStatus("New array generated. Ready to sort.");
+        }
+
+        function renderArray(arr = array, specialIndices = {}) {
+            container.innerHTML = '';
+            for (let i = 0; i < arr.length; i++) {
+                const bar = document.createElement('div');
+                bar.style.height = `${arr[i] * 2}px`;
+                bar.classList.add('bar');
+                
+                if(specialIndices.key === i) bar.classList.add('bar-key');
+                if(specialIndices.comparing === i) bar.classList.add('bar-comparing');
+                if(specialIndices.sortedIndices && specialIndices.sortedIndices.includes(i)) {
+                    bar.classList.add('bar-sorted');
+                }
+
+                const label = document.createElement('div');
+                label.classList.add('bar-label');
+                label.innerText = arr[i];
+                bar.appendChild(label);
+                container.appendChild(bar);
+            }
+        }
+
+        // --- The Sorting Algorithm ---
+        async function insertionSort() {
+            if (isSorting) return;
+            isSorting = true;
+            isPaused = false; // Start in auto-play mode
+            setMainButtonsState(true);
+            setControlButtonsState(true, false);
+
+            renderArray(array, { sortedIndices: [0] });
+            updateStatus("First element is considered sorted.");
+            await step();
+
+            for (let i = 1; i < array.length; i++) {
+                if (!isSorting) break; // Allow early exit if reset
+                let key = array[i];
+                let j = i - 1;
+
+                updateStatus(`Selecting key ${key} from unsorted part.`);
+                renderArray(array, { key: i, sortedIndices: Array.from({length: i}, (_, k) => k) });
+                await step();
+
+                while (j >= 0 && array[j] > key) {
+                    if (!isSorting) break;
+                    updateStatus(`Comparing key ${key} with ${array[j]}. It's larger, so shift.`);
+                    renderArray(array, { key: i, comparing: j, sortedIndices: Array.from({length: i}, (_, k) => k) });
+                    await step();
+
+                    array[j + 1] = array[j];
+                    j = j - 1;
+
+                    renderArray(array, { key: j + 1, sortedIndices: Array.from({length: i}, (_, k) => k) });
+                    await step();
+                }
+                
+                array[j + 1] = key;
+                updateStatus(`Inserting key ${key} into its correct sorted position.`);
+                renderArray(array, { sortedIndices: Array.from({length: i + 1}, (_, k) => k) });
+                await step();
+            }
+            
+            if (isSorting) { // If it wasn't reset
+                updateStatus("Sort Complete!");
+                renderArray(array, { sortedIndices: Array.from({length: array.length}, (_, k) => k) });
+            }
+            isSorting = false;
+            setMainButtonsState(false);
+            setControlButtonsState(false, false);
+        }
+
+        // --- Event Listeners for Controls ---
+        randomizeBtn.addEventListener('click', () => {
+            isSorting = false; // Stop any ongoing sort
+            setMainButtonsState(false);
+            setControlButtonsState(false, false);
+            generateRandomArray();
+        });
+        
+        sortBtn.addEventListener('click', insertionSort);
+
+        pauseBtn.addEventListener('click', () => {
+            isPaused = true;
+            setControlButtonsState(true, true);
+            updateStatus("Paused. Click Resume or Step Forward.");
+        });
+
+        resumeBtn.addEventListener('click', () => {
+            isPaused = false;
+            setControlButtonsState(true, false);
+            updateStatus("Resumed auto-play.");
+            if (stepPromise) {
+                stepPromise(); // Resolve the promise to continue the loop
+                stepPromise = null;
+            }
+        });
+        
+        stepBtn.addEventListener('click', () => {
+            if (stepPromise) {
+                stepPromise(); // Resolve the promise to advance one step
+                stepPromise = null;
+            }
+        });
+
+        // --- Initial Load ---
+        document.addEventListener('DOMContentLoaded', generateRandomArray);
+
+    </script>
+</body>
+</html>
+

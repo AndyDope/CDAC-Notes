@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Insertion Sort</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        #array-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 250px;
+            margin: 20px auto;
+            border-bottom: 2px solid #333;
+            width: 90%;
+            max-width: 800px;
+        }
+        .bar {
+            width: 25px;
+            margin: 0 2px;
+            background-color: #3498db; /* Blue */
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+        .bar-label {
+            position: absolute;
+            bottom: -20px;
+            width: 100%;
+            font-size: 12px;
+            font-weight: bold;
+            color: #333;
+        }
+        /* --- State Classes for Visualization --- */
+        .bar-key {
+            background-color: #e74c3c; /* Red - The element being inserted */
+        }
+        .bar-comparing {
+            background-color: #f1c40f; /* Yellow - The element being compared against */
+        }
+        .bar-sorted {
+            background-color: #2ecc71; /* Green - The element is in its sorted position */
+        }
+        #controls, #status-container {
+            margin-top: 25px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            transition: background-color 0.2s;
+        }
+        button:disabled {
+            background-color: #bdc3c7;
+            cursor: not-allowed;
+        }
+        button:hover:not(:disabled) {
+            background-color: #2980b9;
+        }
+        #status {
+            font-size: 18px;
+            font-family: monospace;
+            height: 25px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Interactive Insertion Sort</h2>
+    <p>Watch how Insertion Sort works by building a sorted sub-array at the beginning.</p>
+    
+    <div id="array-container"></div>
+    
+    <div id="status-container">
+        <p id="status">Click 'Randomize' to generate an array, then 'Sort' to begin.</p>
+    </div>
+
+    <div id="controls">
+        <button id="randomizeBtn">Randomize Array</button>
+        <button id="sortBtn">Sort!</button>
+    </div>
+
+    <script>
+        // --- DOM Elements ---
+        const container = document.getElementById('array-container');
+        const randomizeBtn = document.getElementById('randomizeBtn');
+        const sortBtn = document.getElementById('sortBtn');
+        const statusEl = document.getElementById('status');
+        
+        // --- State ---
+        let array = [];
+        const ARRAY_SIZE = 15;
+        const ANIMATION_SPEED_MS = 300;
+
+        // --- Utility Functions ---
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        function updateStatus(text) {
+            statusEl.innerText = text;
+        }
+        
+        function setButtonsState(disabled) {
+            randomizeBtn.disabled = disabled;
+            sortBtn.disabled = disabled;
+        }
+
+        // --- Array and Rendering Functions ---
+        function generateRandomArray() {
+            array = [];
+            for (let i = 0; i < ARRAY_SIZE; i++) {
+                // Generate numbers between 5 and 100 for better visualization
+                array.push(Math.floor(Math.random() * 96) + 5);
+            }
+            renderArray(array);
+            updateStatus("New random array generated. Ready to sort.");
+        }
+
+        function renderArray(arr = array, specialIndices = {}) {
+            container.innerHTML = '';
+            for (let i = 0; i < arr.length; i++) {
+                const bar = document.createElement('div');
+                bar.style.height = `${arr[i] * 2}px`; // Scale height for visibility
+                bar.classList.add('bar');
+                bar.id = `bar-${i}`;
+
+                // Apply special classes for visualization
+                if(specialIndices.key === i) bar.classList.add('bar-key');
+                if(specialIndices.comparing === i) bar.classList.add('bar-comparing');
+                if(specialIndices.sortedIndices && specialIndices.sortedIndices.includes(i)) {
+                    bar.classList.add('bar-sorted');
+                }
+
+                const label = document.createElement('div');
+                label.classList.add('bar-label');
+                label.innerText = arr[i];
+                bar.appendChild(label);
+
+                container.appendChild(bar);
+            }
+        }
+
+        // --- The Sorting Algorithm ---
+        async function insertionSort() {
+            setButtonsState(true); // Disable buttons during sort
+
+            // The first element is considered sorted by default.
+            renderArray(array, { sortedIndices: [0] });
+            await sleep(ANIMATION_SPEED_MS * 2);
+
+            for (let i = 1; i < array.length; i++) {
+                let key = array[i];
+                let j = i - 1;
+
+                // 1. Select the key to be inserted.
+                updateStatus(`Selecting key ${key} to insert into sorted part.`);
+                renderArray(array, { key: i, sortedIndices: Array.from({length: i}, (_, k) => k) });
+                await sleep(ANIMATION_SPEED_MS * 2);
+
+                // 2. Compare the key with elements in the sorted sub-array.
+                while (j >= 0 && array[j] > key) {
+                    updateStatus(`Comparing key ${key} with ${array[j]}. Since ${array[j]} > ${key}, shift it right.`);
+                    renderArray(array, { key: i, comparing: j, sortedIndices: Array.from({length: i}, (_, k) => k) });
+                    await sleep(ANIMATION_SPEED_MS * 2);
+
+                    // 3. Shift the larger element to the right.
+                    array[j + 1] = array[j];
+                    renderArray(array, { sortedIndices: Array.from({length: i + 1}, (_, k) => k) });
+                    await sleep(ANIMATION_SPEED_MS);
+                    
+                    j = j - 1;
+                }
+                
+                // 4. Insert the key into its correct position.
+                array[j + 1] = key;
+                updateStatus(`Inserting key ${key} into its correct sorted position.`);
+                renderArray(array, { sortedIndices: Array.from({length: i + 1}, (_, k) => k) });
+                await sleep(ANIMATION_SPEED_MS * 3);
+            }
+
+            updateStatus("Sort Complete!");
+            setButtonsState(false); // Re-enable buttons
+        }
+
+        // --- Event Listeners ---
+        randomizeBtn.addEventListener('click', generateRandomArray);
+        sortBtn.addEventListener('click', insertionSort);
+
+        // --- Initial Load ---
+        document.addEventListener('DOMContentLoaded', () => {
+            generateRandomArray();
+        });
+
+    </script>
+</body>
+</html>

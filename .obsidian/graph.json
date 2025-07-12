@@ -20,6 +20,34 @@
         "a": 1,
         "rgb": 14725458
       }
+    },
+    {
+      "query": "path:\"Aptitude CDAC\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "path:\"ADS CDAC\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6902496
+      }
+    },
+    {
+      "query": "path:\"WPT CDAC\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 1768447
+      }
+    },
+    {
+      "query": "path:\"DBT CDAC\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 13193952
+      }
     }
   ],
   "collapse-display": true,
@@ -27,11 +55,11 @@
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
-  "collapse-forces": false,
-  "centerStrength": 0.838541666666667,
-  "repelStrength": 13.5416666666667,
+  "collapse-forces": true,
+  "centerStrength": 1,
+  "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 30,
-  "scale": 0.46973231052771564,
+  "scale": 0.15083741539315046,
   "close": true
 }

@@ -84,32 +84,32 @@ int main() {
 ### #MCQs
 1.  **Who created C++?**
     - [ ] Dennis Ritchie
-    - [ ] **Bjarne Stroustrup**
+    - [x] **Bjarne Stroustrup**
     - [ ] James Gosling
 
 2.  **Purpose of `<iostream>`?**
     - [ ] Math functions
-	- [ ] **Input and output operations**
+	- [x] **Input and output operations**
     - [ ] String handling
 
 3.  **Which is NOT a core OOP feature?**
     - [ ] Encapsulation
     - [ ] Inheritance
-    - [ ] **Procedural execution**
+    - [x] **Procedural execution**
 
 4.  **Program execution begins where?**
     - [ ] `start()`
-    - [ ] **`main()`**
+    - [x] **`main()`**
     - [ ] `begin()`
 
 5.  **What does `return 0;` signify?**
     - [ ] An error occurred
-    - [ ] **Successful execution**
+    - [x] **Successful execution**
     - [ ] No value returned
 
 6.  **Which operator is used for output with `cout`?**
     - [ ] `>>`
-    - [ ] **`<<`**
+    - [x] **`<<`**
     - [ ] `->`
 
 **🔗Links:** [[C++ Sessions 2 & 3 - Beginning with C++|Next Session 2 & 3]]

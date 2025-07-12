@@ -122,34 +122,34 @@ Operators are symbols that perform operations on variables and values.
 ### #MCQs
 1.  **Role of `using namespace std;`?**
     - [ ] Includes a library.
-    - [ ] **Allows using names from `std` namespace without the `std::` prefix.**
+    - [x] **Allows using names from `std` namespace without the `std::` prefix.**
     - [ ] Declares a variable named `std`.
 
 2.  **Which is NOT a C++ keyword?**
     - [ ] `int`
     - [ ] `static`
-    - [ ] **`main` (it's an identifier)**
+    - [x] **`main` (it's an identifier)**
     - [ ] `const`
 
 3.  **A `const` variable must be...**
     - [ ] An integer.
-    - [ ] **Initialized at the time of declaration.**
+    - [x] **Initialized at the time of declaration.**
     - [ ] A global variable.
 
 4.  **Value of `result`: `int a = 5, b = 10; int result = (a > b) ? a : b;`?**
     - [ ] 5
-    - [ ] **10**
+    - [x] **10**
     - [ ] `true`
 
 5.  **Which is a Logical Operator?**
     - [ ] `%`
     - [ ] `==`
-    - [ ] **`&&`**
+    - [x] **`&&`**
     - [ ] `++`
 
 6.  **`int value{};` results in `value` being:**
     - [ ] Uninitialized
-    - [ ] **Initialized to zero**
+    - [x] **Initialized to zero**
     - [ ] A compile error
 
 **🔗Links:** [[C++ Session 4 - Conditional and Looping Statements|Next Session 4]]

@@ -1,0 +1,84 @@
+/*
+================================================================================
+  OBSIDIAN TABLE - LEADERBOARD STYLE (Based on Image)
+  - Version: 4.0
+  - Description: A forceful CSS snippet to make Obsidian tables look exactly
+    like the provided leaderboard image. Overrides most theme styles.
+================================================================================
+*/
+
+/* --- Main Table Container --- */
+.markdown-preview-view table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  margin: 1.75em 0 !important;
+  border-radius: 10px !important;
+  overflow: hidden !important; /* Clips the corners of the header */
+  border: 1px solid #EAEAEA !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05) !important;
+  border-spacing: 0 !important;
+}
+
+/* --- Table Header --- */
+.markdown-preview-view th {
+  background-color: #8ab000 !important; /* The specific leaf color */
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 1.05em !important;
+  text-align: left !important;
+  padding: 14px 20px !important;
+  border: none !important;
+}
+
+/* --- Table Body & Cells --- */
+.markdown-preview-view td {
+  padding: 14px 20px !important;
+  border: none !important; /* Remove all default cell borders */
+  border-bottom: 1px solid #EAEAEA !important; /* Add only a bottom border */
+  transition: background-color 0.2s ease !important;
+}
+
+/* --- Row Styling (Light Theme) --- */
+.theme-light .markdown-preview-view td {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+}
+
+/* --- Row Styling (Dark Theme) --- */
+/* A pleasant dark mode version that keeps the spirit of the design */
+.theme-dark .markdown-preview-view table {
+    border: 1px solid #3a3a3a !important;
+    box-shadow: none !important;
+}
+.theme-dark .markdown-preview-view td {
+  background-color: #2E2E2E !important;
+  color: #dcdcdc !important;
+  border-bottom: 1px solid #3a3a3a !important;
+}
+
+/* --- Remove border from the very last row --- */
+.markdown-preview-view tbody tr:last-child td {
+  border-bottom: none !important;
+}
+
+/* --- Hover Effect --- */
+.theme-light .markdown-preview-view tbody tr:hover td {
+  background-color: #F7F7F7 !important;
+}
+.theme-dark .markdown-preview-view tbody tr:hover td {
+  background-color: #383838 !important;
+}
+
+
+/*
+================================================================================
+  *** IMPORTANT: SPECIAL STYLING FOR BOLD TEXT ***
+  To make text teal like in the "Sally" row, just make it BOLD in Markdown.
+  Example: | 2 | **Sally** | **72,400** | **Students** |
+================================================================================
+*/
+.markdown-preview-view td strong,
+.markdown-preview-view td b {
+  color: #8ab000 !important; /* The same Teal color as the header */
+  font-weight: 600 !important;
+}
