@@ -77,11 +77,11 @@ Outer joins are used when you want to keep all rows from one table, even if ther
 *   **`LEFT OUTER JOIN` (or `LEFT JOIN`)**: Returns **all rows from the left table** and the matched rows from the right table. If there is no match, the columns from the right table will contain `NULL`.
 
     **Example:** Find all employees and their department names.
-    ```sql
-    SELECT E.Name, D.DeptName
-    FROM Employees E
-    LEFT JOIN Departments D ON E.DeptID = D.DeptID;
-    ```
+```sql
+SELECT E.Name, D.DeptName
+FROM Employees E
+LEFT JOIN Departments D ON E.DeptID = D.DeptID;
+```
 **Result:**
 
 | Name  | DeptName   |
@@ -90,16 +90,16 @@ Outer joins are used when you want to keep all rows from one table, even if ther
 | Priya | HR         |
 | Amit  | Technology |
 | Sumit | NULL       |
-    *(Sumit is included because `Employees` is the left table).*
+*(Sumit is included because `Employees` is the left table).*
 
 *   **`RIGHT OUTER JOIN` (or `RIGHT JOIN`)**: Returns **all rows from the right table** and the matched rows from the left table. If there is no match, the columns from the left table will contain `NULL`.
 
     **Example:** Find all departments and the employees in them.
-    ```sql
-    SELECT E.Name, D.DeptName
-    FROM Employees E
-    RIGHT JOIN Departments D ON E.DeptID = D.DeptID;
-    ```
+```sql
+SELECT E.Name, D.DeptName
+FROM Employees E
+RIGHT JOIN Departments D ON E.DeptID = D.DeptID;
+```
 **Result:**
 
 | Name  | DeptName   |
@@ -124,7 +124,9 @@ Outer joins are used when you want to keep all rows from one table, even if ther
 ### Other Useful Concepts
 
 *   **Sequences (`AUTO_INCREMENT`)**: A feature that automatically generates a unique number when a new record is inserted into a table. It is commonly used for primary key columns.
-    `CREATE TABLE Users (id INT AUTO_INCREMENT PRIMARY KEY, ...);`
+```mysql
+CREATE TABLE Users (id INT AUTO_INCREMENT PRIMARY KEY, ...);
+```
 
 *   **Copying Table Structure/Data**:
     *   To create an empty table with the same structure as another:

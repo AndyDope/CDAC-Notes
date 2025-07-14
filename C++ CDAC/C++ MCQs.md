@@ -204,19 +204,19 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
 4.  Consider the code: `int x = 10; int *p = &x; int **q = &p;`. How would you access the value of `x` using the pointer `q`?
 - [ ] `*q`
 - [ ] `&q`
-- [ ] `**q`
+- [x] `**q`
 - [ ] `*q*`
 <br>
 5.  What is the purpose of the `this` pointer?
 - [ ] It points to the next object in an array of objects.
 - [ ] It is a global pointer that points to the currently executing function.
 - [ ] It is a pointer to the base class object within a derived class.
-- [ ] It is a keyword that refers to the specific object instance on which a member function is called.
+- [x] It is a keyword that refers to the specific object instance on which a member function is called.
 <br>
 6.  Executing `delete this;` inside a class member function is...
 - [ ] Always safe and a standard practice for self-destruction.
 - [ ] A compile-time error.
-- [ ] Legal, but extremely dangerous and should only be done if the object was allocated on the heap and you know exactly what you are doing.
+- [x] Legal, but extremely dangerous and should only be done if the object was allocated on the heap and you know exactly what you are doing.
 - [ ] The only correct way to call an object's destructor.
 <br>
 7.  What is the most likely outcome of the following code?
@@ -227,13 +227,13 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
     ```
 - [ ] A segmentation fault.
 - [ ] A compile-time error.
-- [ ] A memory leak.
+- [x] A memory leak.
 - [ ] The integer 5 is successfully deallocated.
 <br>
 8.  Pointer arithmetic in C++ is scaled by what?
 - [ ] The size of an `int`.
 - [ ] The size of a `char`.
-- [ ] The size of the data type the pointer points to.
+- [x] The size of the data type the pointer points to.
 - [ ] It is always scaled by 1 byte.
 
 <br>
@@ -255,7 +255,7 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
 1.  If a class has a user-defined destructor, what other special member function should you almost always define, according to the "Rule of Three"?
 - [ ] A default constructor.
 - [ ] A static member function.
-- [ ] A copy constructor and a copy assignment operator.
+- [x] A copy constructor and a copy assignment operator.
 - [ ] A friend function.
 <br>
 2.  What is the order of constructor and destructor calls for the following code?
@@ -268,25 +268,25 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
     }
     ```
 - [ ] obj1-ctor, obj2-ctor, obj1-dtor, obj2-dtor
-- [ ] obj1-ctor, obj2-ctor, obj2-dtor, obj1-dtor
+- [x] obj1-ctor, obj2-ctor, obj2-dtor, obj1-dtor
 - [ ] obj1-ctor, obj1-dtor, obj2-ctor, obj2-dtor
 - [ ] The order is not guaranteed.
 <br>
 3.  What is the purpose of the `explicit` keyword when applied to a constructor?
 - [ ] It prevents the compiler from automatically generating a default constructor.
 - [ ] It makes the constructor private.
-- [ ] It prevents the compiler from using the constructor for implicit type conversions.
+- [x] It prevents the compiler from using the constructor for implicit type conversions.
 - [ ] It ensures the constructor is inlined.
 <br>
 4.  If a class `MyClass` contains a pointer data member that is allocated with `new` in the constructor, what is the problem with the compiler-generated copy constructor?
 - [ ] It will fail to compile.
 - [ ] It will perform a "deep copy," which is inefficient.
-- [ ] It will perform a "shallow copy," leading to two objects pointing to the same memory, causing issues like double-free.
+- [x] It will perform a "shallow copy," leading to two objects pointing to the same memory, causing issues like double-free.
 - [ ] It will not copy the pointer member at all.
 <br>
 5.  In an inheritance hierarchy `class Derived : public Base`, what is the order of constructor execution when a `Derived` object is created?
 - [ ] Derived constructor first, then Base constructor.
-- [ ] Base constructor first, then Derived constructor.
+- [x] Base constructor first, then Derived constructor.
 - [ ] Only the Derived constructor is called.
 - [ ] The order depends on the compiler.
 <br>
@@ -294,18 +294,18 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
 - [ ] Encapsulation
 - [ ] Inheritance
 - [ ] Polymorphism
-- [ ] Compilation
+- [x] Compilation
 <br>
 7.  When is a copy constructor called?
 - [ ] When an object is passed by reference to a function.
 - [ ] When an object is created using the `new` operator.
-- [ ] When a new object is initialized from an existing object of the same type.
+- [x] When a new object is initialized from an existing object of the same type.
 - [ ] When an object is assigned a new value using the `=` operator.
 <br>
 8.  What is true about a destructor?
 - [ ] It can have parameters.
 - [ ] It can be overloaded.
-- [ ] It is called automatically when an object goes out of scope or is `deleted`.
+- [x] It is called automatically when an object goes out of scope or is `deleted`.
 - [ ] It must be declared `public`.
 
 <br>
@@ -326,48 +326,48 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
 
 1.  What is function "hiding" (or name hiding) in C++?
 - [ ] A technique to make a function's implementation private.
-- [ ] When a derived class function has the same name as a base class function but a different signature, it hides all base class functions with that name.
+- [x] When a derived class function has the same name as a base class function but a different signature, it hides all base class functions with that name.
 - [ ] Another term for function overloading.
 - [ ] When a `friend` function is used to access private members.
 <br>
 2.  To resolve ambiguity when a class inherits from two base classes that both have a function named `foo()`, you would use:
 - [ ] A `virtual` specifier.
 - [ ] A `dynamic_cast`.
-- [ ] The Scope Resolution Operator (e.g., `Base1::foo()`).
+- [x] The Scope Resolution Operator (e.g., `Base1::foo()`).
 - [ ] A `friend` declaration.
 <br>
 3.  If a `friend` function is declared in class `A`, which statement is true?
 - [ ] The function is a member of class `A`.
-- [ ] The function can access `private` and `protected` members of class `A` objects.
+- [x] The function can access `private` and `protected` members of class `A` objects.
 - [ ] Only other `friend` functions can call it.
 - [ ] The function is automatically inherited by classes derived from `A`.
 <br>
 4.  Which two operators cannot be overloaded in C++?
 - [ ] `&&` and `||`
 - [ ] `()` and `[]`
-- [ ] `.` (Member Access) and `::` (Scope Resolution)
+- [x] `.` (Member Access) and `::` (Scope Resolution)
 - [ ] `new` and `delete`
 <br>
 5.  What problem does a `virtual` base class solve?
 - [ ] It prevents a class from being inherited.
 - [ ] It allows a derived class to access private members of its base class.
-- [ ] It resolves the "diamond problem" by ensuring only one copy of the grandparent base class exists in the object layout.
+- [x] It resolves the "diamond problem" by ensuring only one copy of the grandparent base class exists in the object layout.
 - [ ] It enables run-time polymorphism.
 <br>
 6.  In `class Derived : private Base`, what is the accessibility of `public` members of `Base` from within `Derived` and from an object of `Derived`?
 - [ ] `public` within Derived, `public` from an object.
-- [ ] `private` within Derived, inaccessible from an object.
+- [x] `private` within Derived, inaccessible from an object.
 - [ ] `public` within Derived, inaccessible from an object.
 - [ ] `private` within Derived, `private` from an object (inaccessible).
 <br>
 7.  Which of the following demonstrates compile-time (static) polymorphism?
 - [ ] Virtual functions.
-- [ ] Function overloading and operator overloading.
+- [x] Function overloading and operator overloading.
 - [ ] Abstract classes.
 - [ ] The `dynamic_cast` operator.
 <br>
 8.  Can a constructor be declared as a `friend` of another class?
-- [ ] No, constructors cannot be friends.
+- [x] No, constructors cannot be friends.
 - [ ] Yes, but it has no practical effect.
 - [ ] Yes, this is a common pattern for controlling object creation.
 - [ ] Only if the constructor is `private`.
@@ -390,7 +390,7 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
 
 1.  What is the main purpose of a `virtual` destructor?
 - [ ] To prevent the class from being instantiated.
-- [ ] To ensure that the correct destructor is called when deleting a derived class object through a base class pointer.
+- [x] To ensure that the correct destructor is called when deleting a derived class object through a base class pointer.
 - [ ] To allow the destructor to be overloaded.
 - [ ] To make the class an abstract base class.
 <br>
@@ -407,7 +407,7 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
     }
     ```
 - [ ] Base
-- [ ] Derived
+- [x] Derived
 - [ ] A compile-time error.
 - [ ] The output is undefined.
 <br>
@@ -415,23 +415,23 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
 - [ ] Declaring its constructor as `private`.
 - [ ] Not providing a definition for any of its member functions.
 - [ ] Inheriting from an abstract class.
-- [ ] Including at least one pure virtual function (`= 0`).
+- [x] Including at least one pure virtual function (`= 0`).
 <br>
 4.  What is a VTABLE?
 - [ ] A table of variables used by the compiler for optimization.
-- [ ] A look-up table used at runtime to resolve virtual function calls.
+- [x] A look-up table used at runtime to resolve virtual function calls.
 - [ ] A table that stores the `sizeof` every class in the program.
 - [ ] A security feature to prevent virtual memory exploits.
 <br>
 5.  If `class Derived : public Base {}` and `Base` is an abstract class, but `Derived` does not provide an implementation for all of `Base`'s pure virtual functions, then...
 - [ ] The program will not compile.
-- [ ] `Derived` will also be an abstract class.
+- [x] `Derived` will also be an abstract class.
 - [ ] A runtime error will occur when creating a `Derived` object.
 - [ ] The `Base` class implementations will be used by default.
 <br>
 6.  Why can't constructors be `virtual`?
 - [ ] Because they are automatically `inline`.
-- [ ] Because a `virtual` call is resolved using a pointer within an object, but the object is not fully constructed until the constructor has finished running.
+- [x] Because a `virtual` call is resolved using a pointer within an object, but the object is not fully constructed until the constructor has finished running.
 - [ ] It's a purely arbitrary language rule with no technical reason.
 - [ ] Because constructors cannot be inherited.
 <br>
@@ -439,11 +439,11 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
 - [ ] `static_cast`
 - [ ] `reinterpret_cast`
 - [ ] `const_cast`
-- [ ] `dynamic_cast`
+- [x] `dynamic_cast`
 <br>
 8.  An abstract class can have:
 - [ ] Objects of its own type.
-- [ ] Pointers and references to its own type.
+- [x] Pointers and references to its own type.
 - [ ] Only static member functions.
 - [ ] No data members.
 
@@ -465,7 +465,7 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
 
 1.  What is "stack unwinding" in the context of C++ exceptions?
 - [ ] A process where the compiler optimizes the function call stack.
-- [ ] When an exception is thrown, the process of calling destructors for all automatic objects that have been created on the stack between the `try` block and the `throw` statement.
+- [x] When an exception is thrown, the process of calling destructors for all automatic objects that have been created on the stack between the `try` block and the `throw` statement.
 - [ ] A runtime error caused by infinite recursion.
 - [ ] The process of catching an exception in the `main` function.
 <br>
@@ -473,42 +473,42 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
 - [ ] The program terminates immediately.
 - [ ] The object's memory is leaked because the destructor is never called.
 - [ ] The C++ runtime guarantees that the destructor for the object is called.
-- [ ] The memory allocated for the object is automatically reclaimed, and its destructor is *not* called because the object was never fully constructed.
+- [x] The memory allocated for the object is automatically reclaimed, and its destructor is *not* called because the object was never fully constructed.
 <br>
 3.  What does opening a file with `ofstream myFile("data.txt", ios::app);` do?
 - [ ] It opens the file for reading and writing at the same time.
 - [ ] It truncates (clears) the file if it exists.
-- [ ] It opens the file and positions the write pointer at the end, so any new writes are appended.
+- [x] It opens the file and positions the write pointer at the end, so any new writes are appended.
 - [ ] It opens the file in binary mode.
 <br>
 4.  What is the purpose of the `catch(...)` block?
 - [ ] It catches only exceptions of type `int`.
 - [ ] It is a syntax error.
-- [ ] It is a "catch-all" handler that catches any type of exception.
+- [x] It is a "catch-all" handler that catches any type of exception.
 - [ ] It catches only standard library exceptions.
 <br>
 5.  How can you check if an `ifstream` object named `inFile` failed to open a file?
 - [ ] `if (inFile == NULL)`
-- [ ] `if (!inFile.is_open())` or `if (!inFile)`
+- [x] `if (!inFile.is_open())` or `if (!inFile)`
 - [ ] `if (inFile.has_failed())`
 - [ ] You must use a `try`/`catch` block, as it throws an exception on failure.
 <br>
 6.  The RAII (Resource Acquisition Is Initialization) idiom helps write exception-safe code by:
 - [ ] Acquiring resources in a global function and initializing them in `main`.
-- [ ] Tying the lifetime of a resource (like a file handle or memory) to the lifetime of an object, so the resource is released when the object's destructor is called (even during stack unwinding).
+- [x] Tying the lifetime of a resource (like a file handle or memory) to the lifetime of an object, so the resource is released when the object's destructor is called (even during stack unwinding).
 - [ ] Using `goto` statements to handle cleanup code.
 - [ ] Prohibiting dynamic memory allocation.
 <br>
 7.  What is the difference between opening a file with `ios::app` vs `ios::ate`?
 - [ ] There is no difference; they are aliases.
-- [ ] `app` positions the pointer at the end for all writes, while `ate` only positions the pointer at the end upon opening (it can be moved afterwards).
+- [x] `app` positions the pointer at the end for all writes, while `ate` only positions the pointer at the end upon opening (it can be moved afterwards).
 - [ ] `app` is for text files, `ate` is for binary files.
 - [ ] `app` creates the file if it doesn't exist, `ate` does not.
 <br>
 8.  Re-throwing the currently handled exception inside a `catch` block is done using the statement:
 - [ ] `throw e;` where `e` is the exception object caught.
 - [ ] `rethrow;`
-- [ ] `throw;`
+- [x] `throw;`
 - [ ] `catch(throw);`
 
 <br>
@@ -530,12 +530,12 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
 1.  Why must template definitions (implementations) usually be placed in header files?
 - [ ] It is a stylistic convention only.
 - [ ] To allow templates to access private members of other classes.
-- [ ] Because the compiler needs the full template definition to be visible in any translation unit that uses it, in order to instantiate the template for a specific type.
+- [x] Because the compiler needs the full template definition to be visible in any translation unit that uses it, in order to instantiate the template for a specific type.
 - [ ] It makes compilation faster.
 <br>
 2.  What is "iterator invalidation"?
 - [ ] A runtime error when an iterator goes past the end of a container.
-- [ ] When an operation on a container (like inserting an element into a `std::vector`) makes some or all of its existing iterators unusable.
+- [x] When an operation on a container (like inserting an element into a `std::vector`) makes some or all of its existing iterators unusable.
 - [ ] A compile-time error when an iterator type does not match its container type.
 - [ ] When an iterator is used with a generic algorithm that doesn't support it.
 <br>
@@ -543,35 +543,35 @@ Practice these questions to solidify your understanding of C++ concepts. For bes
 - [ ] `std::vector`
 - [ ] `std::unordered_map`
 - [ ] `std::list`
-- [ ] `std::map`
+- [x] `std::map`
 <br>
 4.  What is template specialization?
 - [ ] Creating a template that only works for a specific set of types.
 - [ ] The process of the compiler generating code from a template.
-- [ ] Providing a separate, specific implementation of a template for a particular type that should behave differently from the generic version.
+- [x] Providing a separate, specific implementation of a template for a particular type that should behave differently from the generic version.
 - [ ] Using a template as a base class.
 <br>
 5.  What is the purpose of `dynamic_cast` in RTTI?
 - [ ] To cast away the `const`-ness of an object.
-- [ ] To safely perform a downcast (from a base class pointer to a derived class pointer) by checking the object's actual type at runtime.
+- [x] To safely perform a downcast (from a base class pointer to a derived class pointer) by checking the object's actual type at runtime.
 - [ ] To perform any type of pointer conversion without compile-time checks.
 - [ ] To get the `type_info` object for a class.
 <br>
 6.  Which of the following operations is most likely to be significantly slower on a `std::vector` than on a `std::list` for a large number of elements?
 - [ ] Accessing the element at a random index (e.g., `my_container[N/2]`).
 - [ ] Adding an element to the very end (`push_back`).
-- [ ] Inserting a new element at the very beginning.
+- [x] Inserting a new element at the very beginning.
 - [ ] Getting the total number of elements (`.size()`).
 <br>
 7.  To use the `typeid` operator on a polymorphic type (a class with at least one virtual function) and get its *dynamic* type, what must be true?
 - [ ] The class must have a public default constructor.
 - [ ] RTTI must be explicitly enabled via a `#pragma` directive.
 - [ ] The `typeid` operator must be applied to a pointer to the object.
-- [ ] The expression given to `typeid` must be a dereferenced pointer or a reference to an object.
+- [x] The expression given to `typeid` must be a dereferenced pointer or a reference to an object.
 <br>
 8.  Which container would you use to implement a print job queue where jobs are processed in the order they are received?
 - [ ] `std::stack`
-- [ ] `std::queue`
+- [x] `std::queue`
 - [ ] `std::priority_queue`
 - [ ] `std::vector`
 

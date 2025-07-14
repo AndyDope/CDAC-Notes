@@ -51,7 +51,7 @@ Database design is often done using an **Entity-Relationship Diagram (ERD)**. An
 
 ```c
 +-----------+        +----------+        +----------+
-|  Student  |--(N)----| Enrolls  |----(M)--|  Course  |
+|  Student  |--(N)---| Enrolls  |---(M)--|  Course  |
 +-----------+        +----------+        +----------+
      |                    |                    |
   (Attributes)         (Relationship)       (Attributes)
