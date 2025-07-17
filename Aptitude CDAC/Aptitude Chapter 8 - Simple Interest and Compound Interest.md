@@ -4,7 +4,7 @@ Welcome to Chapter 8. This is another critical topic built upon the foundations 
 
 ---
 
-#### **1. Core Terminology**
+### **1. Core Terminology**
 
 *   **Principal (P):** The original sum of money borrowed or lent.
 *   **Interest (I):** The extra money paid for using the principal.
@@ -14,7 +14,7 @@ Welcome to Chapter 8. This is another critical topic built upon the foundations 
 
 ---
 
-#### **2. Simple Interest (SI)**
+### **2. Simple Interest (SI)**
 
 Simple Interest is calculated **only on the original principal** for the entire time period. The interest earned each year is the same.
 
@@ -24,8 +24,8 @@ Simple Interest is calculated **only on the original principal** for the entire 
 
 **Example: Find the simple interest on ₹5000 for 3 years at a rate of 8% per annum.**
 *   P = 5000, R = 8, T = 3.
-*   `SI = (5000 \* 8 \* 3) / 100`
-*   `= 50 \* 8 \* 3 = 1200`.
+*   `SI = (5000 * 8 * 3) / 100`
+*   `= 50 * 8 * 3 = 1200`.
 *   The simple interest is ₹1200.
 
 **Conceptual Approach:**
@@ -34,7 +34,7 @@ Interest for three years = `400 \* 3 = ₹1200`.
 
 ---
 
-#### **3. Compound Interest (CI)**
+### **3. Compound Interest (CI)**
 
 Compound Interest is calculated on the **principal plus the accumulated interest** from previous periods. This is often called "interest on interest."
 
@@ -66,7 +66,7 @@ Total CI = `21% of 5000 = ₹1050`.
 
 ---
 
-#### **4. Difference Between CI and SI**
+### **4. Difference Between CI and SI**
 
 A very common question type involves the difference between CI and SI for a given period.
 
@@ -79,9 +79,9 @@ A very common question type involves the difference between CI and SI for a give
 
 **Example: Find the difference between CI and SI on ₹8000 for 2 years at 5% per annum.**
 *   P = 8000, R = 5, T = 2.
-*   `Difference = 8000 \* (5/100)²`
-*   `= 8000 \* (1/20)²`
-*   `= 8000 \* (1/400) = 20`.
+*   `Difference = 8000 * (5/100)²`
+*   `= 8000 * (1/20)²`
+*   `= 8000 * (1/400) = 20`.
 *   The difference is ₹20.
 
 ---

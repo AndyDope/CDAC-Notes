@@ -4,7 +4,7 @@ Welcome to Chapter 13. This chapter is about the art of counting. **Permutation*
 
 ---
 
-#### **1. The Fundamental Principle of Counting**
+### **1. The Fundamental Principle of Counting**
 
 *   **Multiplication Principle:** If an event can occur in `m` ways, and following it, a second event can occur in `n` ways, then the two events in succession can occur in `m × n` ways.
 *   **Addition Principle:** If an event can occur in `m` ways and a second, mutually exclusive event can occur in `n` ways, then either of the two events can occur in `m + n` ways.
@@ -18,7 +18,7 @@ Welcome to Chapter 13. This chapter is about the art of counting. **Permutation*
 
 ---
 
-#### **2. Factorial Notation**
+### **2. Factorial Notation**
 
 The factorial of a non-negative integer `n`, denoted by `n!`, is the product of all positive integers less than or equal to `n`.
 `n! = n × (n-1) × (n-2) × ... × 1`
@@ -31,7 +31,7 @@ Factorials are the building blocks of permutations and combinations.
 
 ---
 
-#### **3. Permutation (Arrangement)**
+### **3. Permutation (Arrangement)**
 
 A permutation is an arrangement of objects in a specific order. Think of it as "permutations are for positions."
 
@@ -58,7 +58,7 @@ If a word has letters that are repeated, you must divide by the factorial of the
 
 ---
 
-#### **4. Combination (Selection)**
+### **4. Combination (Selection)**
 
 A combination is a selection of objects where the order does not matter. Think of it as "combinations are for committees."
 

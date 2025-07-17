@@ -100,6 +100,8 @@ Let's sort the array: `[12, 11, 13, 5, 6]`
 
 ### **4. Merge Sort (Emphasis)**
 
+^a79978
+
 *   **Core Idea:** A "Divide and Conquer" algorithm. It recursively divides the array into two halves, sorts them independently, and then merges the two sorted halves back into a single sorted array.
 *   **Complexity:** **O(n log n)** in all cases (Best, Average, Worst). This is its greatest strength.
 *   **In-place:** No. It requires O(n) auxiliary space for the temporary array used in the merge step.

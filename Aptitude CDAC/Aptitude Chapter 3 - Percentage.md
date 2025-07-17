@@ -6,7 +6,7 @@ The word "per-cent" comes from the Latin *per centum*, which means "by the hundr
 
 ---
 
-#### **1. Core Concept: Percentage-Fraction-Decimal Conversion**
+### **1. Core Concept: Percentage-Fraction-Decimal Conversion**
 
 This is the most crucial skill for this chapter. Direct calculations with percentages are often slow. Converting them to fractions first is a game-changer.
 
@@ -18,20 +18,26 @@ This is the most crucial skill for this chapter. Direct calculations with percen
 **Memorize This Table!**
 Committing these common fractions to memory will drastically increase your calculation speed.
 
-| Fraction | Percentage | Decimal | | Fraction | Percentage | Decimal |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1/1 | 100% | 1.0 | | 1/7 | 14.28% | 0.1428 |
-| 1/2 | 50% | 0.5 | | 1/8 | 12.5% | 0.125 |
-| 1/3 | 33.33% | 0.333 | | 1/9 | 11.11% | 0.111 |
-| 1/4 | 25% | 0.25 | | 1/10 | 10% | 0.1 |
-| 1/5 | 20% | 0.2 | | 1/11 | 9.09% | 0.0909 |
-| 1/6 | 16.66% | 0.166 | | 1/12 | 8.33% | 0.0833 |
+| Fraction | Percentage | Decimal |
+| :------- | :--------- | :------ |
+| 1/1      | 100%       | 1.0     |
+| 1/2      | 50%        | 0.5     |
+| 1/3      | 33.33%     | 0.333   |
+| 1/4      | 25%        | 0.25    |
+| 1/5      | 20%        | 0.2     |
+| 1/6      | 16.66%     | 0.166   |
+| 1/7      | 14.28%     | 0.1428  |
+| 1/8      | 12.5%      | 0.125   |
+| 1/9      | 11.11%     | 0.111   |
+| 1/10     | 10%        | 0.1     |
+| 1/11     | 9.09%      | 0.0909  |
+| 1/12     | 8.33%      | 0.0833  |
 
 From these, you can derive others. For example, if `1/8 = 12.5%`, then `3/8 = 3 * 12.5% = 37.5%`.
 
 ---
 
-#### **2. Basic Percentage Calculations**
+### **2. Basic Percentage Calculations**
 
 **Formula:** `x% of y = (x/100) * y`
 
@@ -47,11 +53,11 @@ The trick is to use the fraction equivalent instead.
 
 ---
 
-#### **3. Percentage Increase and Decrease**
+### **3. Percentage Increase and Decrease**
 
 This concept is about finding a new value after a percentage change or finding the percentage change between two values.
 
-##### **a) Finding the New Value**
+#### **a) Finding the New Value**
 A powerful shortcut is the **Multiplying Factor (MF)**.
 *   For an **increase** of `x%`, the new value is `(100+x)%` of the original. **MF = `1 + x/100`**.
 *   For a **decrease** of `x%`, the new value is `(100-x)%` of the original. **MF = `1 - x/100`**.
@@ -60,7 +66,7 @@ A powerful shortcut is the **Multiplying Factor (MF)**.
 *   **Slow Method:** `15% of 400 = 60`. New price = `400 + 60 = 460`.
 *   **Fast Method (MF):** 15% increase means MF = `1.15`. New price = `400 * 1.15 = 460`.
 
-##### **b) Finding the Percentage Change**
+#### **b) Finding the Percentage Change**
 **Formula:** `Percentage Change = [ (Final Value - Initial Value) / Initial Value ] * 100%`
 *   **Important:** The denominator is always the **initial** or **base** value.
 
@@ -71,7 +77,7 @@ A powerful shortcut is the **Multiplying Factor (MF)**.
 
 ---
 
-#### **4. Successive Percentage Change**
+### **4. Successive Percentage Change**
 
 This applies when a value is changed multiple times consecutively.
 

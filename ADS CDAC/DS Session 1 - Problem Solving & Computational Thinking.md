@@ -175,7 +175,7 @@ Once you have a working solution, review it.
     <br>
 
 5.  **During which step of the problem-solving process would you consider edge cases like an empty list or invalid user input?**
-    - [ ] Step 1 (Understand) and Step 4 (Review)
+    - [x] Step 1 (Understand) and Step 4 (Review)
     - [ ] Step 2 (Plan) only
     - [ ] Step 3 (Implement) only
     - [ ] It is not part of the standard process.

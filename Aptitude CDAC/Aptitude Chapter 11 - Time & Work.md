@@ -6,7 +6,7 @@ This is a logical topic that can be solved very quickly using the "Unitary Metho
 
 ---
 
-#### **1. Core Concept: Work, Time, and Efficiency**
+### **1. Core Concept: Work, Time, and Efficiency**
 
 The fundamental relationship is:
 `Work = Efficiency × Time`
@@ -24,7 +24,7 @@ This means if someone is twice as efficient, they will take half the time to com
 
 ---
 
-#### **2. The LCM Method (The Best Method)**
+### **2. The LCM Method (The Best Method)**
 
 Instead of working with fractions (e.g., A does 1/10 of the work per day), it's much easier to assume the **Total Work** is the LCM (Least Common Multiple) of the times given for all individuals.
 
@@ -51,7 +51,7 @@ This method avoids all fractions and makes the logic clear.
 
 ---
 
-#### **3. Work and Wages**
+### **3. Work and Wages**
 
 The principle here is simple: **Wages are distributed in the ratio of the work done by each individual.**
 
@@ -69,7 +69,7 @@ If they work for the same amount of time, the wages are distributed in the ratio
 
 ---
 
-#### **4. The `M-D-H` Formula**
+### **4. The `M-D-H` Formula**
 
 This is used for problems involving groups of people, working for a certain number of days and hours.
 

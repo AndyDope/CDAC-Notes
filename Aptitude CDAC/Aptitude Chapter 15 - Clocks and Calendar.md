@@ -8,7 +8,7 @@ Welcome to Chapter 15. This chapter deals with two distinct but related topics t
 
 A clock is a circle of 360°. The problems almost always involve the minute hand and the hour hand.
 
-#### **1. Speed of the Hands**
+### **1. Speed of the Hands**
 
 *   **Hour Hand:**
     *   Covers 360° in 12 hours. Speed = 360/12 = 30° per hour.
@@ -20,7 +20,7 @@ A clock is a circle of 360°. The problems almost always involve the minute hand
     *   Relative Speed = `6° - 0.5° = 5.5° per minute`.
     *   This means in one minute, the minute hand gains 5.5° on the hour hand. This is a crucial concept.
 
-#### **2. Angle Between the Hands**
+### **2. Angle Between the Hands**
 
 This is the most common type of clock problem.
 
@@ -39,7 +39,7 @@ Where:
 
 *Note:* Sometimes a question asks for the reflex angle, which would be `360° - 10° = 350°`. Unless specified, give the smaller angle.
 
-#### **3. Special Positions of the Hands**
+### **3. Special Positions of the Hands**
 
 *   **Hands Coincide (0° apart):** The hands are together. This happens **11 times in 12 hours** and 22 times in 24 hours. They gain 360° on each other.
 *   **Hands are Opposite (180° apart):** The hands are in a straight line, pointing in opposite directions. This also happens **11 times in 12 hours**.
@@ -54,7 +54,7 @@ Where:
 
 Calendar problems revolve around the concept of **odd days**.
 
-#### **1. Odd Days**
+### **1. Odd Days**
 
 An "odd day" is a remainder day. It's the number of days more than a complete week.
 *   `10 days = 1 week + 3 odd days`.
@@ -65,14 +65,14 @@ An "odd day" is a remainder day. It's the number of days more than a complete we
 *   **Ordinary Year:** 365 days = 52 weeks + **1 odd day**.
 *   **Leap Year:** 366 days = 52 weeks + **2 odd days**.
 
-#### **2. Leap Year**
+### **2. Leap Year**
 
 A year is a leap year if it is divisible by 4.
 *   **Exception:** A century year (like 1800, 1900, 2000) is a leap year **only if it is divisible by 400**.
     *   1900 is not a leap year (not divisible by 400).
     *   2000 is a leap year (divisible by 400).
 
-#### **3. Finding the Day of the Week**
+### **3. Finding the Day of the Week**
 
 The method involves counting the total number of odd days from a known reference point.
 
@@ -114,6 +114,163 @@ The method involves counting the total number of odd days from a known reference
 4.  **Find the Day:** 5 corresponds to **Friday**.
 
 ---
+### **==4. Easy trick for the Date-to-Day Calculation Method==**
+
+This method involves a 5-step process to get a final sum, which is then used to find the day of the week. To use this method, you must memorize three sets of codes: **Month Codes**, **Year Codes**, and **Day Codes**.
+
+#### Step 1: Memorize the Codes
+
+##### **a) Month Codes**  
+This table gives a unique code for each month of the year.
+
+| **Month** | **Code**<br> |
+| :-------: | :----------: |
+|     J     |    0<br>     |
+|     F     |      3       |
+|     M     |      3       |
+|     A     |      6       |
+|     M     |      1       |
+|     J     |      4       |
+|     J     |      6       |
+|     A     |      2       |
+|     S     |      5       |
+|     O     |      0       |
+|     N     |      3       |
+|     D     |      5       |
+Mnemonic Tip: You can try to remember this as 033, 614, 625, 035, like a phone number.
+
+##### **b) Year/Century Codes**  
+This table provides a code based on the century.
+
+|   Century   | Code |
+| :---------: | :--: |
+| **1600 – 1699** |  6   |
+| **1700 – 1799** |  4   |
+| **1800 – 1899** |  2   |
+| **1900 – 1999** |  0   |
+| **2000 – 2099** |  6   |
+**Note:** The pattern repeats every 400 years (6, 4, 2, 0). So, 2100s will be 4, 2200s will be 2, etc.
+
+##### **c) Day Codes (The Final Answer Key)**  
+The remainder from our final calculation will map to a day of the week.
+
+| Remainder | Day       |
+| --------- | --------- |
+| **0**         | Sunday    |
+| **1**         | Monday    |
+| **2**         | Tuesday   |
+| **3**         | Wednesday |
+| **4**         | Thursday  |
+| **5**         | Friday    |
+| **6**         | Saturday  |
+
+#### Step 2: The 5-Part Calculation
+
+For any given date (e.g., 26th January, 1947), you need to find five values and add them together.
+
+1. **Last two digits of the year:** From the year, take the last two digits.
+    
+2. **Quotient of (Last two digits / 4):** Take the last two digits, divide by 4, and take only the integer part of the result (the quotient). This accounts for leap years.
+    
+3. **The Date:** The day of the month.
+    
+4. **The Month Code:** The code for the month from the Month Code table.
+    
+5. **The Year Code:** The code for the century from the Year Code table.
+    
+
+#### Step 3: Find the Remainder
+
+- **Add** the five values you collected in Step 2.
+    
+- **Divide** the total sum by **7**.
+    
+- The **remainder** of this division is your final code.
+    
+
+#### Step 4: Find the Day
+
+- Match the remainder from Step 3 with the Day Code table to find the day of the week.
+    
+
+---
+
+### Worked Examples
+
+#### Example 1: What was the day of the week on 26th January, 1947?
+
+1. **Last two digits of year (47):** 47
+    
+2. **Quotient of (47 / 4):** 11 (since 47 = 4 * 11 + 3)
+    
+3. **Take the date:** 26
+    
+4. **Month code (January):** 0
+    
+5. **Year code (1900-1999):** 0
+    **Total Sum:** `47 + 11 + 26 + 0 + 0 = 84`  
+    
+6. **Divide by 7:** 84 / 7 = 12 with a remainder of 0.
+    
+7. **Find the day:** A remainder of 0 corresponds to **Sunday**.
+    
+
+#### Example 2: What was the day of the week on 15th August, 1947?
+
+1. **Last two digits of year (47):** 47
+    
+2. **Quotient of (47 / 4):** 11
+    
+3. **Take the date:** 15
+    
+4. **Month code (August):** 2
+    
+5. **Year code (1900-1999):** 0
+    **Total Sum:** `47 + 11 + 15 + 2 + 0 = 75`  
+    
+6. **Divide by 7:** 75 / 7 = 10 with a remainder of 5.
+    
+7. **Find the day:** A remainder of 5 corresponds to **Friday**.
+    
+
+---
+
+### The Leap Year Exception
+
+There is one special rule you must remember.
+
+**Rule:** For any date in **January or February** of a **leap year**, you must **subtract 1** from the final remainder.
+
+- A year is a leap year if it is divisible by 4, unless it is a century year. Century years are only leap years if they are divisible by 400. (e.g., 2000 was a leap year, 1900 was not).
+    
+
+#### Example 3: What was the day of the week on 29th February, 2012?
+
+- Check: 2012 is divisible by 4, so it is a leap year. The month is February. The rule applies.
+    
+
+1. **Last two digits of year (12):** 12
+    
+2. **Quotient of (12 / 4):** 3
+    
+3. **Take the date:** 29
+    
+4. **Month code (February):** 3
+    
+5. **Year code (2000-2099):** 6
+    **Total Sum:** `12 + 3 + 29 + 3 + 6 = 53`  
+    
+6. **Divide by 7:** 53 / 7 = 7 with a remainder of 4.
+    
+7. **Apply Leap Year Rule:** The date is in February of a leap year, so subtract 1 from the remainder. 4 - 1 = 3.
+    
+8. **Find the day:** A final remainder of 3 corresponds to **Wednesday**.
+    
+
+> **Quick Question:** You are calculating the day for 10th March, 2024. Is 2024 a leap year? Do you need to apply the special subtraction rule?  
+> **Answer:** 2024 is a leap year. However, the date is in March, not January or February. Therefore, you do **not** apply the subtraction rule.
+
+---
 
 ### **Topic Summary & Revision**
 
@@ -135,13 +292,13 @@ The method involves counting the total number of odd days from a known reference
 1.  **At 3:40, the hour hand and the minute hand of a clock form an angle of:**
     - [ ] 120°
     - [ ] 125°
-    - [ ] 130°
+    - [x] 130°
     - [ ] 135°
     <br>
 
 2.  **How many times in a day are the hands of a clock in a straight line but opposite in direction?**
     - [ ] 20
-    - [ ] 22
+    - [x] 22
     - [ ] 24
     - [ ] 48
     <br>
@@ -150,20 +307,20 @@ The method involves counting the total number of odd days from a known reference
     - [ ] Thursday
     - [ ] Friday
     - [ ] Saturday
-    - [ ] Sunday
+    - [x] Sunday
     <br>
 
 4.  **A clock is started at noon. By 10 minutes past 5, the hour hand has turned through:**
     - [ ] 145°
     - [ ] 150°
-    - [ ] 155°
+    - [x] 155°
     - [ ] 160°
     <br>
 
 5.  **Which of the following is not a leap year?**
     - [ ] 2000
     - [ ] 2004
-    - [ ] 1900
+    - [x] 1900
     - [ ] 1600
     <br>
 
@@ -198,12 +355,12 @@ The method involves counting the total number of odd days from a known reference
 10. **How many times do the hands of a clock coincide in a day?**
     - [ ] 20
     - [ ] 21
-    - [ ] 22
+    - [x] 22
     - [ ] 24
     <br>
 
 **Answer Key**
-1.  **C**: ||Angle = |(11/2)\*40 - 30\*3| = |11\*20 - 90| = |220 - 90| = 130°.||
+1.  **C:**  ||Angle = \|(11/2)\*40 - 30\*3\| = \|11\*20 - 90\| = \|220 - 90\| = 130°.||
 2.  **B**: ||The hands are opposite (180° apart) once every hour, but in a 12-hour period, this happens only 11 times (the event between 5 and 7 o'clock happens exactly at 6). In a full day (24 hours), it happens 11 \* 2 = 22 times.||
 3.  **D**: ||Years up to 2005: 2000 years (0 odd days) + 5 years. In 5 years, there is 1 leap year (2004). So, 4 ordinary + 1 leap = 4\*1 + 1\*2 = 6 odd days. Days in 2006: Jan(3) + Feb(0) + Mar(3) + Apr(2) + May(28). Sum = 36 days. Odd days = 36 mod 7 = 1. Total odd days = 6 + 1 = 7, which is 0 odd days. 0 corresponds to Sunday.||
 4.  **C**: ||Time from noon to 5:10 is 5 hours and 10 minutes. Total minutes = (5 \* 60) + 10 = 310 minutes. The hour hand moves at 0.5° per minute. Total angle turned = 310 \* 0.5 = 155°.||

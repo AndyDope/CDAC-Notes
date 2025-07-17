@@ -4,7 +4,7 @@ Welcome to Chapter 5. This chapter introduces the fundamental concepts of compar
 
 ---
 
-#### **1. Ratio**
+### **1. Ratio**
 
 A ratio is a way to compare two quantities by division. The ratio of a quantity `a` to a quantity `b` is written as `a:b` and is read as "a is to b". It is equivalent to the fraction `a/b`.
 
@@ -38,7 +38,7 @@ Now, simplify by dividing all by their HCF (4): `6 : 8 : 9`.
 
 ---
 
-#### **2. Proportion**
+### **2. Proportion**
 
 A proportion is a statement that two ratios are equal. If `a:b` is equal to `c:d`, we write it as `a:b :: c:d`.
 
@@ -58,13 +58,13 @@ This rule is used to find a missing term.
 
 ---
 
-#### **3. Partnership**
+### **3. Partnership**
 
 This is a business application of ratios. Profits or losses in a business are shared among partners in the ratio of their "effective investments".
 
 **Effective Investment = Capital Invested × Time Period of Investment**
 
-##### **a) Simple Partnership**
+#### **a) Simple Partnership**
 When all partners invest their capital for the **same period of time**. In this case, the time component is equal for all, so it cancels out.
 `Profit Ratio = Ratio of Capitals Invested`
 
@@ -75,7 +75,7 @@ When all partners invest their capital for the **same period of time**. In this 
 4.  5 parts correspond to ₹2400. So, 1 part = `2400 / 5 = ₹480`.
 5.  A's share is 2 parts: `2 * 480 = ₹960`.
 
-##### **b) Compound Partnership**
+#### **b) Compound Partnership**
 When partners invest their capital for **different periods of time**.
 `Profit Ratio = Ratio of (Capital × Time)`
 
@@ -102,27 +102,27 @@ When partners invest their capital for **different periods of time**.
 
 1.  **If A:B = 5:7 and B:C = 6:11, then A:B:C is:**
     - [ ] 55:77:66
-    - [ ] 30:42:77
+    - [x] 30:42:77
     - [ ] 35:49:42
     - [ ] None of these
     <br>
 
 2.  **Two numbers are in the ratio 3:5. If 9 is subtracted from each, the new ratio is 12:23. The smaller number is:**
     - [ ] 27
-    - [ ] 33
+    - [x] 33
     - [ ] 49
     - [ ] 55
     <br>
 
 3.  **What is the mean proportional between 9 and 64?**
     - [ ] 18
-    - [ ] 24
+    - [x] 24
     - [ ] 32
     - [ ] 36
     <br>
 
 4.  **A bag contains 50p, 25p, and 10p coins in the ratio 5:9:4, amounting to ₹206. Find the number of 50p coins.**
-    - [ ] 100
+    - [x] 100
     - [ ] 180
     - [ ] 200
     - [ ] 80
@@ -130,7 +130,7 @@ When partners invest their capital for **different periods of time**.
 
 5.  **A, B, and C start a business by investing ₹20,000, ₹25,000, and ₹30,000 respectively. Find the share of B out of a total profit of ₹15,000.**
     - [ ] ₹4,000
-    - [ ] ₹5,000
+    - [x] ₹5,000
     - [ ] ₹6,000
     - [ ] ₹7,500
     <br>
@@ -138,13 +138,13 @@ When partners invest their capital for **different periods of time**.
 6.  **The salaries of A, B, and C are in the ratio 2:3:5. If the increments are 15%, 10%, and 20% respectively in their salaries, then what will be the new ratio of their salaries?**
     - [ ] 3:3:10
     - [ ] 10:11:20
-    - [ ] 23:33:60
+    - [x] 23:33:60
     - [ ] Cannot be determined
     <br>
 
 7.  **A mixture contains milk and water in the ratio 5:1. On adding 5 litres of water, the ratio of milk to water becomes 5:2. The quantity of milk in the original mixture is:**
     - [ ] 16 litres
-    - [ ] 25 litres
+    - [x] 25 litres
     - [ ] 32 litres
     - [ ] 22 litres
     <br>
@@ -153,18 +153,18 @@ When partners invest their capital for **different periods of time**.
     - [ ] ₹7500
     - [ ] ₹8000
     - [ ] ₹8500
-    - [ ] ₹9000
+    - [x] ₹9000
     <br>
 
 9.  **If 40% of a number is equal to two-thirds of another number, what is the ratio of the first number to the second number?**
     - [ ] 2:5
     - [ ] 3:7
-    - [ ] 5:3
+    - [x] 5:3
     - [ ] 7:3
     <br>
 
 10. **A, B, and C enter into a partnership. A invests some money at the beginning, B invests double the amount after 6 months, and C invests triple the amount after 8 months. If the annual profit is ₹27,000, what is C's share?**
-    - [ ] ₹9,000
+    - [x] ₹9,000
     - [ ] ₹10,500
     - [ ] ₹12,000
     - [ ] ₹8,625

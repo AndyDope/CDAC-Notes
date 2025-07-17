@@ -3,9 +3,9 @@
   "theme": "system",
   "baseFontSizeAction": true,
   "enabledCssSnippets": [
-    "headings",
-    "table"
+    "table",
+    "headings"
   ],
-  "baseFontSize": 17,
+  "baseFontSize": 22,
   "accentColor": "#74ef6b"
 }

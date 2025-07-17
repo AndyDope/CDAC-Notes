@@ -157,7 +157,7 @@ DELETE FROM Students WHERE roll_no = 104;
 1.  **If you cannot add a new course to a database until at least one student enrolls in it, this is an example of what?**
     - [ ] Update Anomaly
     - [ ] Deletion Anomaly
-    - [ ] Insertion Anomaly
+    - [x] Insertion Anomaly
     - [ ] Data Redundancy
     <br>
 
@@ -165,46 +165,46 @@ DELETE FROM Students WHERE roll_no = 104;
     - [ ] All its attributes are atomic.
     - [ ] It has no transitive dependencies.
     - [ ] All non-key attributes are fully dependent on the primary key.
-    - [ ] Both A and C.
+    - [x] Both A and C.
     <br>
 
 3.  **Which SQL statement is used to add a new employee record to the 'Employees' table?**
     - [ ] `UPDATE Employees ...`
     - [ ] `ADD Employees ...`
     - [ ] `CREATE Employees ...`
-    - [ ] `INSERT INTO Employees ...`
+    - [x] `INSERT INTO Employees ...`
     <br>
 
 4.  **Consider the functional dependency `ISBN -> Title`. This means:**
     - [ ] For every book title, there is exactly one ISBN.
     - [ ] The ISBN and Title are interchangeable.
-    - [ ] For every ISBN, there is exactly one book title.
+    - [x] For every ISBN, there is exactly one book title.
     - [ ] The ISBN is determined by the title.
     <br>
 
 5.  **A table `(BookID, AuthorID, AuthorNationality)` has `BookID` as the primary key. We know that `AuthorID -> AuthorNationality`. This table violates which normal form?**
     - [ ] 1NF
     - [ ] 2NF
-    - [ ] 3NF
+    - [x] 3NF
     - [ ] BCNF
     <br>
 
 6.  **What is the likely outcome of running the command `UPDATE Employees SET salary = salary * 1.1;` without a `WHERE` clause?**
     - [ ] It will produce a syntax error.
     - [ ] It will give a 10% salary raise to the first employee in the table.
-    - [ ] It will give a 10% salary raise to all employees in the table.
+    - [x] It will give a 10% salary raise to all employees in the table.
     - [ ] It will update the salary of the most recently added employee.
     - <br>
 
 7.  **The primary motivation for normalizing a database is to:**
     - [ ] Increase query speed.
-    - [ ] Minimize data redundancy.
+    - [x] Minimize data redundancy.
     - [ ] Make the database schema simpler.
     - [ ] Reduce the number of tables.
     <br>
 
 8.  **A table with a single-column primary key is already in 1NF. Which other normal form is it guaranteed to be in?**
-    - [ ] 2NF
+    - [x] 2NF
     - [ ] 3NF
     - [ ] BCNF
     - [ ] 4NF
@@ -212,7 +212,7 @@ DELETE FROM Students WHERE roll_no = 104;
 
 9.  **The `DELETE` command belongs to which category of SQL?**
     - [ ] DDL
-    - [ ] DML
+    - [x] DML
     - [ ] DCL
     - [ ] TCL
     <br>
@@ -221,7 +221,7 @@ DELETE FROM Students WHERE roll_no = 104;
     - [ ] Converted to a `TEXT` data type.
     - [ ] Stored as is, since it's just a string.
     - [ ] Split into multiple columns like `phone1`, `phone2`.
-    - [ ] Restructured into a separate `PhoneNumbers` table linked by `UserID`.
+    - [x] Restructured into a separate `PhoneNumbers` table linked by `UserID`.
     <br>
 
 **Answer Key**

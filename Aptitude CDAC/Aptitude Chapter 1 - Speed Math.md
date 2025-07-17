@@ -16,7 +16,7 @@ This is one of the most common and easiest tricks to master.
 **Example: Calculate 75²**
 1.  The number before 5 is **7**.
 2.  The next integer after 7 is **8**.
-3.  Multiply them: `7 \* 8 = 56`.
+3.  Multiply them: `7 * 8 = 56`.
 4.  Append "25".
 5.  **Result: 5625**
 
@@ -185,12 +185,12 @@ The process is almost identical to HCF, but with one extra step.
 ### **Topic Summary & Revision**
 
 *   **Core Idea:** Replace slow written calculations with fast mental shortcuts.
-*   **Squaring (ending in 5):** `(N5)² = [N \* (N+1)]` then `25`.
+*   **Squaring (ending in 5):** `(N5)² = [N * (N+1)]` then `25`.
 *   **Multiplying by 11:** Right-to-left neighbor addition.
 *   **Base Method (near 100):** Use differences and cross-addition.
 *   **2-digit Multiplication:** Vertical-cross-vertical pattern.
 *   **Squaring (near 50):** Use 25 as the reference base. `LHS=25+d`, `RHS=d²`.
-*   **Multiply by 5, 25, 125:** `\*10/2`, `\*100/4`, `\*1000/8`.
+*   **Multiply by 5, 25, 125:** `*10/2`, `*100/4`, `*1000/8`.
 *   **Approx. Square Root:** `x + (N - x²) / (2x)`.
 *   **HCF/LCM:** Use the L-method for a fast and reliable calculation.
 
@@ -296,27 +296,6 @@ The process is almost identical to HCF, but with one extra step.
  <br>
 
 **Answer Key:**
-1.  **A**: ||(8 * 9) followed by 25 = 7225.||
-<br>
-2.  **B**: ||Last digit: 7. Middle: 6+7=13 (write 3, carry 1). First: 6+1=7. Result: 737.||
-<br>
-3.  **A**: ||Base 100. Differences are -1 and -4. RHS: (-1)*(-4) = 04. LHS: 99-4 = 95. Result: 9504.||
-<br>
-4.  **B**: ||The number before 5 is 12. 12 * 13 = 156. Append 25. Result: 15625.||
-<br>
-5.  **A**: ||Last: 1. 9+1=10 (write 0, carry 1). 8+9=17, +1 carry = 18 (write 8, carry 1). First: 8+1 carry = 9. Result: 9801.||
-<br>
-6.  **A**: ||Base 100. Differences are +6 and +8. RHS: 6*8 = 48. LHS: 106+8 = 114. Result: 11448.||
-<br>
-7.  **A**: ||This is 98 * 98 or 98². Using base method: -2 and -2. RHS: (-2)(-2)=04. LHS: 98-2=96. Result: 9604.||
-<br>
-8.  **B**: ||Calculate 545 * 11. Last: 5. 4+5=9. 5+4=9. First: 5. Result: 5995.||
-<br>
-9.  **A**: ||This is a tricky one. Base 100. Differences are -12 and +5. RHS: (-12)(+5) = -60. LHS: 88+5 = 93. The result is (93 * 100) - 60 = 9300 - 60 = 9240. When the RHS is negative, you "borrow" from the LHS.||
-<br>
-10. **C**: ||Reverse the squaring trick for numbers ending in 5. 3025 ends in 25. The number before it is 30. Which two consecutive numbers multiply to 30? 5 \* 6. So the number N is 55. The question asks for (55+1) \* 11 = 56 \* 11. Using the trick: Last: 6. Middle: 5+6=11 (write 1, carry 1). First: 5+1=6. Result: 616. Whoops, let me recheck. Ah, (N+1) \* 11. N is 55. (55+1) is 56. 56 \* 11 is... Last: 6. Middle: 5+6=11 (write 1, carry 1). First: 5+1=6. Result is 616. Let me re-check the answer options... Ah, I made a mistake in my mental calculation for the options. Let's write the correct answer. The process is correct, let's assume the option should have been 616. I'll correct the answer key. Wait, let me check my multiplication of 56. It is 30. So N is 55. N+1 is 56. 5611 = 616. The provided answer C is 605, which is 5511. It seems the question intended to ask for N11, not (N+1)11. Let's answer based on the most likely intent of the question setter making a typo. If they meant N11, the answer is 55 \* 11 = 605. This is a common type of ambiguity in aptitude tests. I will answer based on the provided choice C being correct. So N = 55. Question asks for N \* 11 = 55 \* 11 = 605. Let me re-write the explanation assuming a typo in the question. Original question: (N+1) * 11. My calc: N=55 -> 5611=616. The options are 506, 616, 605, 594. Ah, 616 is an option! My initial analysis was correct. So N=55, N+1=56, 5611=616. The answer is B. Okay, I'll write the explanation for B.||
-
-**Answer Key (Re-verified):**
 1.  **A**: ||(8 * 9) followed by 25 = 7225.||
 <br>
 2.  **B**: ||Last digit: 7. Middle: 6+7=13 (write 3, carry 1). First: 6+1=7. Result: 737.||

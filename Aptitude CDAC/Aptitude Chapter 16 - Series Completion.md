@@ -4,25 +4,25 @@ Welcome to the Logical Reasoning section. Our first topic is **Series Completion
 
 ---
 
-#### **1. Number Series**
+### **1. Number Series**
 
 This is the most common type of series problem. Your first step should always be to find the **difference** between consecutive terms. Often, the pattern lies in these differences.
 
 **Common Patterns to Look For:**
 
-##### **a) Arithmetic Progression (AP) / Common Difference**
+#### **a) Arithmetic Progression (AP) / Common Difference**
 The difference between each consecutive term is constant.
 *   **Example:** 2, 5, 8, 11, 14, ?
     *   *Pattern:* The difference is always +3.
     *   *Next Term:* 14 + 3 = 17.
 
-##### **b) Geometric Progression (GP) / Common Ratio**
+#### **b) Geometric Progression (GP) / Common Ratio**
 Each term is obtained by multiplying the previous term by a constant number.
 *   **Example:** 3, 9, 27, 81, ?
     *   *Pattern:* Each term is multiplied by 3.
     *   *Next Term:* 81 × 3 = 243.
 
-##### **c) Series of Squares or Cubes**
+#### **c) Series of Squares or Cubes**
 The terms are squares or cubes of consecutive numbers, sometimes with a small addition or subtraction.
 *   **Example:** 1, 4, 9, 16, 25, ?
     *   *Pattern:* The series consists of squares: 1², 2², 3², 4², 5².
@@ -31,7 +31,7 @@ The terms are squares or cubes of consecutive numbers, sometimes with a small ad
     *   *Pattern:* This looks complex. Let's check for proximity to cubes: 1³-1, 2³-1, 3³-1, 4³-1.
     *   *Next Term:* 5³ - 1 = 125 - 1 = 124.
 
-##### **d) Alternating Series**
+#### **d) Alternating Series**
 Two or more independent series are interleaved. Look at every alternate term.
 *   **Example:** 10, 20, 12, 17, 14, 14, ?
     *   *Series 1 (odd positions):* 10, 12, 14, ... (Pattern is +2). The next term is 16.
@@ -39,7 +39,7 @@ Two or more independent series are interleaved. Look at every alternate term.
     *   *The question asks for the 7th term, which is part of Series 1.*
     *   *Next Term:* 14 + 2 = 16.
 
-##### **e) Two-Stage / Difference of Differences**
+#### **e) Two-Stage / Difference of Differences**
 The differences between the terms themselves form an AP or GP.
 *   **Example:** 2, 6, 12, 20, 30, ?
     *   *1st Differences:* 4, 6, 8, 10, ...
@@ -51,7 +51,7 @@ The differences between the terms themselves form an AP or GP.
 
 ---
 
-#### **2. Alphabet / Letter Series**
+### **2. Alphabet / Letter Series**
 
 These problems work just like number series, but you use the positions of the letters in the alphabet (A=1, B=2, ..., Z=26). It is highly recommended to memorize these positions or be able to write them down quickly during an exam.
 

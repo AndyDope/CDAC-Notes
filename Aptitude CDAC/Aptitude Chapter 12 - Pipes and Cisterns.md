@@ -9,7 +9,7 @@ All the methods, especially the **LCM Method**, apply directly.
 
 ---
 
-#### **1. Core Concept: Positive and Negative Work**
+### **1. Core Concept: Positive and Negative Work**
 
 The framework is identical to Time and Work.
 
@@ -25,7 +25,7 @@ The framework is identical to Time and Work.
 
 ---
 
-#### **2. Solving Problems with the LCM Method**
+### **2. Solving Problems with the LCM Method**
 
 This is the most efficient way to solve these problems.
 

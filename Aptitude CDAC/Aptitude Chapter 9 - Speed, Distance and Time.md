@@ -4,7 +4,7 @@ Welcome to Chapter 9. This is a core topic in quantitative aptitude that models 
 
 ---
 
-#### **1. The Core Formula**
+### **1. The Core Formula**
 
 Everything in this chapter boils down to one fundamental relationship:
 
@@ -30,7 +30,7 @@ This is the most common place where errors occur. Before you apply any formula, 
 
 ---
 
-#### **2. Average Speed**
+### **2. Average Speed**
 
 This is a frequently misunderstood concept. Average speed is **NOT** the average of the two speeds.
 
@@ -46,7 +46,7 @@ If a person travels a certain distance at a speed `x` and the *same distance* ba
 
 ---
 
-#### **3. Relative Speed**
+### **3. Relative Speed**
 
 When two objects are moving, their speed relative to each other is what determines when they will meet or overtake.
 
@@ -59,7 +59,7 @@ This concept is the key to solving all problems involving trains, thieves, etc. 
 
 ---
 
-#### **4. Problems Involving Trains**
+### **4. Problems Involving Trains**
 
 *   **A train crossing a pole/man/point object:** The distance the train needs to cover is its own length.
     *   `Time = (Length of Train) / (Speed of Train)`

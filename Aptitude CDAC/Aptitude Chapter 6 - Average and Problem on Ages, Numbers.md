@@ -1,19 +1,10 @@
-You are absolutely right. I apologize again for the formatting inconsistencies. My priority is to provide the notes exactly as you need them. I have now fully understood the two key formatting rules:
-
-1.  **Hide Answers:** The explanation for each MCQ answer must be enclosed in `||...||`.
-2.  **Asterisk Formatting:** Any asterisk (`*`) used for multiplication must be escaped with a backslash like this: `\*`.
-
-I will now provide the corrected, final version for Chapter 6, adhering strictly to these two rules. My apologies for the repeated corrections.
-
----
-
 ### **Quantitative Aptitude | Chapter 6: Average and Problem on Ages, Numbers**
 
 Welcome to Chapter 6. This chapter covers two closely related areas. **Average** is a fundamental statistical measure that gives you a central or typical value for a set of numbers. **Problems on Ages and Numbers** are classic word problems that are often solved using the principles of averages and basic algebra. Mastering averages is crucial as it appears frequently in Data Interpretation sets.
 
 ---
 
-#### **1. Average**
+### **1. Average**
 
 The average (or arithmetic mean) of a set of observations is their sum divided by the number of observations.
 
@@ -39,24 +30,24 @@ Teacher's Age = `10 + (30 × 1) = 10 + 30 = 40`.
 
 ---
 
-#### **2. Properties of Averages and Special Cases**
+### **2. Properties of Averages and Special Cases**
 
 *   **Average of an Arithmetic Progression (AP):** If a set of numbers are in an AP (have a constant difference), the average is simply the middle number, or the average of the first and last numbers.
     *   *Example:* Average of 10, 20, 30, 40, 50 is the middle number, **30**.
     *   *Example:* Average of 10, 20, 30, 40 is `(10 + 40) / 2 = 25`.
 *   **Consecutive Numbers:** The average of `n` consecutive numbers is `(First Number + Last Number) / 2`.
 *   **Weighted Average:** Used when you have subgroups with different averages.
-    **Formula:** `Weighted Avg = (n1\*A1 + n2\*A2 + ...) / (n1 + n2 + ...)`
+    **Formula:** `Weighted Avg = (n1*A1 + n2*A2 + ...) / (n1 + n2 + ...)`
     where `n1`, `n2` are the number of items in each group and `A1`, `A2` are their respective averages.
 
 **Example: The average score of Section A with 20 students is 60, and the average score of Section B with 30 students is 70. Find the combined average.**
-*   `Combined Avg = (20\*60 + 30\*70) / (20 + 30)`
+*   `Combined Avg = (20*60 + 30*70) / (20 + 30)`
 *   `= (1200 + 2100) / 50`
 *   `= 3300 / 50 = 66`.
 
 ---
 
-#### **3. Problems on Ages**
+### **3. Problems on Ages**
 
 These are word problems that require you to set up linear equations based on information about people's ages at different points in time.
 
@@ -79,7 +70,7 @@ The **age difference** between two people is **always constant**. If you are 5 y
     *   `6(4x + 5) = 5(5x + 5)`
     *   `24x + 30 = 25x + 25`
     *   `x = 5`.
-5.  Find their present ages: A's age = `4x = 4\*5 = 20` years. B's age = `5x = 5\*5 = 25` years.
+5.  Find their present ages: A's age = `4x = 4*5 = 20` years. B's age = `5x = 5*5 = 25` years.
 
 ---
 

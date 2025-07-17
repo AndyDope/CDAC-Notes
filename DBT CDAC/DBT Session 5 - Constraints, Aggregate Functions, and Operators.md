@@ -151,7 +151,7 @@ HAVING COUNT(roll_no) > 1;
 1.  **Which constraint combines the properties of `UNIQUE` and `NOT NULL`?**
     - [ ] `FOREIGN KEY`
     - [ ] `CHECK`
-    - [ ] `PRIMARY KEY`
+    - [x] `PRIMARY KEY`
     - [ ] `DEFAULT`
     <br>
 
@@ -159,19 +159,19 @@ HAVING COUNT(roll_no) > 1;
     - [ ] `SELECT city FROM Customers GROUP BY city;`
     - [ ] `SELECT city FROM Customers;`
     - [ ] `SELECT UNIQUE city FROM Customers;`
-    - [ ] `SELECT DISTINCT city FROM Customers;`
+    - [x] `SELECT DISTINCT city FROM Customers;`
     <br>
 
 3.  **A query needs to find all departments where the average salary is greater than 50,000. Which clause should be used for the condition `AVG(salary) > 50000`?**
     - [ ] `WHERE`
-    - [ ] `HAVING`
+    - [x] `HAVING`
     - [ ] `GROUP BY`
     - [ ] `LIKE`
     <br>
 
 4.  **Which `LIKE` pattern would find all names that have 'a' as the second letter and are at least three letters long?**
     - [ ] `LIKE 'a_%'`
-    - [ ] `LIKE '_a%'`
+    - [x] `LIKE '_a%'`
     - [ ] `LIKE '%a_'`
     - [ ] `LIKE '_a_'`
     <br>
@@ -179,27 +179,27 @@ HAVING COUNT(roll_no) > 1;
 5.  **What is the purpose of a `FOREIGN KEY`?**
     - [ ] To ensure every row in the table is unique.
     - [ ] To provide a default value for a column.
-    - [ ] To enforce a link between data in two tables, ensuring referential integrity.
+    - [x] To enforce a link between data in two tables, ensuring referential integrity.
     - [ ] To speed up data retrieval.
     <br>
 
 6.  **Which statement about `NULL` is true?**
     - [ ] `NULL` is the same as 0 for numeric types.
     - [ ] `NULL` is the same as an empty string ('') for string types.
-    - [ ] To find rows where a column is `NULL`, you must use the `IS NULL` operator.
+    - [x] To find rows where a column is `NULL`, you must use the `IS NULL` operator.
     - [ ] `NULL` values are included in the result of `COUNT(*)`, but not `COUNT(column_name)`.
     <br>
 
 7.  **What is the correct order of clauses in a `SELECT` statement?**
     - [ ] `SELECT, GROUP BY, WHERE, HAVING, ORDER BY`
-    - [ ] `SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY`
+    - [x] `SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY`
     - [ ] `SELECT, FROM, HAVING, WHERE, GROUP BY, ORDER BY`
     - [ ] `SELECT, WHERE, FROM, GROUP BY, ORDER BY, HAVING`
     <br>
 
 8.  **The `COUNT(column_name)` function, by default, counts:**
     - [ ] All rows in the table.
-    - [ ] Only the rows where `column_name` has a non-`NULL` value.
+    - [x] Only the rows where `column_name` has a non-`NULL` value.
     - [ ] Only the distinct values in `column_name`.
     - [ ] The number of characters in `column_name`.
     <br>
@@ -207,13 +207,13 @@ HAVING COUNT(roll_no) > 1;
 9.  **To sort the results of a query by `price` in descending order (highest to lowest), which clause would you use?**
     - [ ] `ORDER BY price ASC`
     - [ ] `GROUP BY price DESC`
-    - [ ] `ORDER BY price DESC`
+    - [x] `ORDER BY price DESC`
     - [ ] `SORT BY price DESC`
     <br>
 
 10. **The `BETWEEN` operator, as in `WHERE price BETWEEN 10 AND 20`, is inclusive. This is equivalent to:**
     - [ ] `price > 10 AND price < 20`
-    - [ ] `price >= 10 AND price <= 20`
+    - [x] `price >= 10 AND price <= 20`
     - [ ] `price > 10 OR price < 20`
     - [ ] `price = 10 OR price = 20`
     <br>

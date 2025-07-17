@@ -272,4 +272,6 @@ Just like in SQL, indexes in MongoDB are crucial for query performance. Without 
 *   **The Power of the Aggregation Framework:** For complex reporting and data analysis, `find()` is not enough. MongoDB has a powerful **Aggregation Framework** that allows you to process data through a multi-stage pipeline. You can group, sort, reshape, and perform calculations on your data on the server side, similar to `GROUP BY` in SQL but much more powerful.
 *   **Read/Write Concerns:** When working with replica sets, you can configure the "write concern" (how many nodes must confirm a write before it's considered successful) and "read preference" (do you read from the primary for consistency or from secondaries for lower latency?). These are advanced topics but crucial for designing resilient distributed systems.
 
-This concludes the Database Technologies module. Congratulations on completing the syllabus
+- This concludes the Database Technologies module. Congratulations on completing the syllabus.
+- Head over to the 🔗[[DBT Overview]] page for a quick overview of the syllabus.
+- Or Test your knowledge by solving [[DBT MCQs]]

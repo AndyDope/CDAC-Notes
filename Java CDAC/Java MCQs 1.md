@@ -2,7 +2,7 @@
 
 Practice these questions to challenge your in-depth understanding of Java concepts. For best results, attempt to answer them before checking the key.
 
-**🔗 Back to [[Java Overview]]**
+**🔗 Back to [[Core Java Overview]]**
 
 ---
 

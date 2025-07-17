@@ -1,7 +1,3 @@
-Of course. Let's move on to the next chapter, which deals with combining different items or groups.
-
----
-
 ### **Quantitative Aptitude | Chapter 7: Mixture and Alligation**
 
 Welcome to Chapter 7. This topic is about mixing two or more ingredients in a certain ratio to create a mixture with a desired quality or price. **Alligation** is a powerful visual shortcut used to solve these problems quickly. It helps you find the ratio in which two ingredients must be mixed to get a mixture of a mean value.
@@ -10,7 +6,7 @@ This rule is extremely versatile and can be applied to problems involving prices
 
 ---
 
-#### **1. The Concept of Mixture**
+### **1. The Concept of Mixture**
 
 A mixture is what you get when you combine two or more items. The problems typically involve:
 *   Mixing two varieties of an item (like tea, rice, or sugar) with different prices.
@@ -23,7 +19,7 @@ The fundamental principle is that the total value of the mixture is the sum of t
 
 ---
 
-#### **2. The Rule of Alligation**
+### **2. The Rule of Alligation**
 
 Alligation is a graphical method to find the ratio in which two ingredients must be mixed.
 
@@ -78,7 +74,7 @@ The result `(D - M) : (M - C)` is the **ratio of the quantities** in which the c
 
 ---
 
-#### **3. Problems Involving Repeated Dilution / Replacement**
+### **3. Problems Involving Repeated Dilution / Replacement**
 
 This is a common variation where a certain quantity of a solution is removed and replaced with another liquid (usually water), and this process is repeated multiple times.
 

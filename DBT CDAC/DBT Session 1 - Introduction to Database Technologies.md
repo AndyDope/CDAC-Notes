@@ -85,23 +85,23 @@ Databases have evolved over time, leading to different models for storing data.
 **Visualizing the Client-Server Model:**
 
 ```c
-                  +-------------------+
-                  |   Your Computer   |
-                  |-------------------|
-                  |  MySQL Client     |
-                  | (e.g., Workbench) |
-                  +-------------------+
-                           |
-                      (Network)
-                      SQL Queries -->
-                      <-- Results
-                           |
-                  +-------------------+
-                  |   Server Machine  |
-                  |-------------------|
-                  |   MySQL Server    | -------> [Database Files]
-                  |      (DBMS)       |
-                  +-------------------+
+	  +-------------------+
+	  |   Your Computer   |
+	  |-------------------|
+	  |  MySQL Client     |
+	  | (e.g., Workbench) |
+	  +-------------------+
+			   |
+		  (Network)
+		  SQL Queries -->
+		  <-- Results
+			   |
+	  +-------------------+
+	  |   Server Machine  |
+	  |-------------------|
+	  |   MySQL Server    | -------> [Database Files]
+	  |      (DBMS)       |
+	  +-------------------+
 ```
 
 #### Common MySQL Clients
@@ -141,7 +141,7 @@ Databases have evolved over time, leading to different models for storing data.
 1.  **Which of the following is the primary role of a DBMS?**
     - [ ] To store data in plain text files.
     - [ ] To provide a programming language for application development.
-    - [ ] To act as an interface between the user and the database, managing the data.
+    - [x] To act as an interface between the user and the database, managing the data.
     - [ ] To create graphical user interfaces.
     <br>
 
@@ -149,26 +149,26 @@ Databases have evolved over time, leading to different models for storing data.
     - [ ] Attribute
     - [ ] Relation
     - [ ] Schema
-    - [ ] Tuple
+    - [x] Tuple
     <br>
 
 3.  **The relational model of data is primarily based on the concept of:**
     - [ ] Objects and classes
     - [ ] Files and folders
-    - [ ] Two-dimensional tables
+    - [x] Two-dimensional tables
     - [ ] A hierarchy or tree structure
     <br>
 
 4.  **Which feature of a DBMS helps prevent the same piece of information from being stored in multiple places unnecessarily?**
     - [ ] Concurrency Control
     - [ ] Security Management
-    - [ ] Control over Data Redundancy
+    - [x] Control over Data Redundancy
     - [ ] Data Abstraction
     <br>
 
 5.  **A startup is building a social media app where the data schema is expected to change frequently and handle massive user growth. Which type of database would be the most suitable choice?**
     - [ ] Relational DBMS (RDBMS)
-    - [ ] NoSQL DBMS
+    - [x] NoSQL DBMS
     - [ ] File-based System
     - [ ] Object-Relational DBMS (ORDBMS)
     <br>
@@ -176,26 +176,26 @@ Databases have evolved over time, leading to different models for storing data.
 6.  **The logical design of a database, which defines tables, columns, and relationships, is called the:**
     - [ ] Instance
     - [ ] Query
-    - [ ] Schema
+    - [x] Schema
     - [ ] Client
     <br>
 
 7.  **MySQL is an example of which type of Database Management System?**
     - [ ] Graph DBMS
     - [ ] Document DBMS
-    - [ ] Relational DBMS
+    - [x] Relational DBMS
     - [ ] Key-Value Store
     <br>
 
 8.  **A database administrator needs to quickly connect to a remote server via a secure shell (SSH) terminal to check the server status. Which MySQL client is she most likely to use?**
     - [ ] MySQL Workbench
     - [ ] Microsoft Access
-    - [ ] MySQL Monitor (CLI)
+    - [x] MySQL Monitor (CLI)
     - [ ] A web browser
     <br>
 
 9.  **What does SQL stand for?**
-    - [ ] Structured Query Language
+    - [x] Structured Query Language
     - [ ] Sequential Query Language
     - [ ] Simple Query Logic
     - [ ] Standardized Query Lexicon
@@ -205,7 +205,7 @@ Databases have evolved over time, leading to different models for storing data.
     - [ ] It uses less computer memory.
     - [ ] It is available on more operating systems.
     - [ ] It can be used for scripting and automation.
-    - [ ] It provides visual tools for database design and administration.
+    - [x] It provides visual tools for database design and administration.
     <br>
 
 **Answer Key**

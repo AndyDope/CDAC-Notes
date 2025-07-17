@@ -47,7 +47,7 @@ It is used for problems that exhibit two key properties:
 Let's consider the problem of finding the nth Fibonacci number.
 `fib(n) = fib(n-1) + fib(n-2)` with base cases `fib(0)=0`, `fib(1)=1`.
 
-**a) The Naive Recursive Solution:**
+#### a) The Naive Recursive Solution:
 ```java
 int fib(int n) {
     if (n <= 1) return n;
@@ -71,7 +71,7 @@ This solution is elegant but horribly inefficient. Let's visualize the calls for
 ```
 Notice that `fib(3)` is calculated twice, `fib(2)` is calculated three times, and so on. The work is redundant, leading to an exponential time complexity of O(2ⁿ).
 
-**b) The DP Solution: Memoization (Top-Down Approach)**
+#### b) The DP Solution: Memoization (Top-Down Approach)
 
 *   **Core Idea:** We still use recursion, but we store the result of each sub-problem in a cache (like an array or map). Before computing a result, we check if it's already in the cache.
 *   **This is the "storing results" part of DP.**
@@ -98,7 +98,7 @@ end procedure
 ```
 Now, `fib(3)` will be computed only once. The second time it's needed, the value is retrieved from the cache in O(1) time. This brings the complexity down to **O(n)** because each `fib(i)` from `0` to `n` is computed exactly once.
 
-**c) The DP Solution: Tabulation (Bottom-Up Approach)**
+#### c) The DP Solution: Tabulation (Bottom-Up Approach)
 
 *   **Core Idea:** Instead of starting from `n` and going down (top-down), we solve the problem from the smallest sub-problem up to the original problem. We build a "table" of solutions.
 *   **This completely avoids recursion.**
@@ -240,4 +240,5 @@ This approach is also **O(n)** time and uses O(n) space for the table. It is oft
 
 This concludes the Algorithms and Data Structures module. Congratulations on completing the syllabus.
 
-**MCQs** 🔗[[DSA MCQs]]
+- Go through a complete overview of the complete syllabus in one go **🔗[[DSA Overview]]**.
+- Or try some **#MCQs** based on the complete syllabus and test your knowledge **🔗[[DSA MCQs]]**.

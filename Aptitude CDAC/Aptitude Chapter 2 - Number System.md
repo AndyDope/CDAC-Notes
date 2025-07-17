@@ -1,10 +1,10 @@
-### **Quantitative Aptitude | Chapter 2: Number System**
+## **Quantitative Aptitude | Chapter 2: Number System**
 
 Welcome to Chapter 2. The Number System is the bedrock of quantitative aptitude. It deals with the classification of numbers and the rules that govern their operations. A strong grasp of these concepts is essential because they form the hidden logic behind many types of problems, from simple arithmetic to complex algebra.
 
 ---
 
-#### **1. Classification of Numbers**
+### **1. Classification of Numbers**
 
 Understanding the different categories of numbers is the first step.
 
@@ -22,7 +22,7 @@ Within integers, we have other important classifications:
 
 ---
 
-#### **2. Divisibility Rules: The Ultimate Shortcut**
+### **2. Divisibility Rules: The Ultimate Shortcut**
 
 Divisibility rules allow you to check if a number is perfectly divisible by another without performing the actual division. These are critical time-savers.
 
@@ -47,7 +47,7 @@ Divisibility rules allow you to check if a number is perfectly divisible by anot
 
 ---
 
-#### **3. Finding the Unit Digit of Large Powers**
+### **3. Finding the Unit Digit of Large Powers**
 
 This is a common question type that looks intimidating but is very simple once you understand **cyclicity**. The unit digit of powers of any number repeats in a cycle.
 
@@ -116,7 +116,7 @@ This is a common question type that looks intimidating but is very simple once y
 4.  **If the number 5432*7 is divisible by 9, what is the value of the digit represented by ?**
     - [ ] 0
     - [ ] 1
-    - [ ] 6
+    - [x] 6
     - [ ] 9
     <br>
 
@@ -128,7 +128,7 @@ This is a common question type that looks intimidating but is very simple once y
     <br>
 
 6.  **A number when divided by 899 gives a remainder of 63. What will be the remainder when the same number is divided by 29?**
-    - [ ] 5
+    - [x] 5
     - [ ] 2
     - [ ] 4
     - [ ] 8
@@ -149,7 +149,7 @@ This is a common question type that looks intimidating but is very simple once y
     <br>
 
 9.  **How many numbers between 200 and 600 are divisible by 4, 5, and 6?**
-    - [ ] 5
+    - [x] 5
     - [ ] 6
     - [ ] 7
     - [ ] 8
