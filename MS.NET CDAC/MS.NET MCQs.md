@@ -173,7 +173,6 @@ Practice these questions to challenge your in-depth understanding of web develop
 19. **Answer:** ||(B) The using statement (using (var conn = new SqlConnection()) { ... }) is syntactic sugar that guarantees the .Dispose() method of an IDisposable object is called, even if an exception occurs. This is the standard way to ensure unmanaged resources are cleaned up promptly.||
 20. **Answer:** ||(B) It's a convenient shortcut for providing a default value for a nullable type. string name = suppliedName ?? "Default Name"; assigns "Default Name" to name only if suppliedName is null.||
 <br>
-
 ### **Topic 3: Generics, Collections, Delegates & LINQ (Sessions 7-10)**
 
 21. **A method signature is `void ProcessItems<T>(List<T> items) where T : IComparable<T>`. What does the "generic constraint" mean?**
